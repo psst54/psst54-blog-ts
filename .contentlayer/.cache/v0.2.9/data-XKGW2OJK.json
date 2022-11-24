@@ -1,0 +1,174 @@
+{
+  "cacheItemsMap": {
+    "posts/rrr.mdx": {
+      "document": {
+        "title": "Two Forms of Pre-rendering",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "서양철학사"
+        ],
+        "body": {
+          "raw": "\r\nNext.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.\r\n\r\n- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.\r\n- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.\r\n\r\nImportantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.\r\n",
+          "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var p=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var r in e)s(n,r,{get:e[r],enumerable:!0})},a=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!f.call(n,i)&&i!==r&&s(n,i,{get:()=>e[i],enumerable:!(o=l(e,i))||o.enumerable});return n};var j=(n,e,r)=>(r=n!=null?g(u(n)):{},a(e||!n||!n.__esModule?s(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>a(s({},\"__esModule\",{value:!0}),n);var d=p((S,c)=>{c.exports=_jsx_runtime});var T={};x(T,{default:()=>M,frontmatter:()=>w});var t=j(d()),w={title:\"Two Forms of Pre-rendering\",category:[\"\\uC11C\\uC591\\uCCA0\\uD559\\uC0AC\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function h(n){let e=Object.assign({p:\"p\",strong:\"strong\",ul:\"ul\",li:\"li\",em:\"em\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.p,{children:[\"Next.js has two forms of pre-rendering: \",(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" and \",(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\". The difference is in \",(0,t.jsx)(e.strong,{children:\"when\"}),\" it generates the HTML for a page.\"]}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" is the pre-rendering method that generates the HTML at \",(0,t.jsx)(e.strong,{children:\"build time\"}),\". The pre-rendered HTML is then \",(0,t.jsx)(e.em,{children:\"reused\"}),\" on each request.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\" is the pre-rendering method that generates the HTML on \",(0,t.jsx)(e.strong,{children:\"each request\"}),\".\"]}),`\n`]}),`\n`,(0,t.jsxs)(e.p,{children:[\"Importantly, Next.js lets you \",(0,t.jsx)(e.strong,{children:\"choose\"}),' which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.']})]})}function y(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(h,n)})):h(n)}var M=y;return _(T);})();\n;return Component;"
+        },
+        "_id": "posts/rrr.mdx",
+        "_raw": {
+          "sourceFilePath": "posts/rrr.mdx",
+          "sourceFileName": "rrr.mdx",
+          "sourceFileDir": "posts",
+          "contentType": "mdx",
+          "flattenedPath": "posts/rrr"
+        },
+        "type": "Post",
+        "url": "/posts/posts/rrr"
+      },
+      "documentHash": "1669262488666",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "posts/test.mdx": {
+      "document": {
+        "title": "테스트 페이지",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "서양철학사"
+        ],
+        "body": {
+          "raw": "\r\n# content title\r\n\r\n## Autolink literals\r\n\r\nwww.example.com, https://example.com, and contact@example.com.\r\n\r\n## Footnote\r\n\r\nA note[^1]\r\n\r\n[^1]: Big note.\r\n\r\n## Strikethrough\r\n\r\n~one~ or ~~two~~ tildes.\r\n\r\n## Table\r\n\r\n| a   | b   |   c |  d  |\r\n| --- | :-- | --: | :-: |\r\n\r\n## Tasklist\r\n\r\n- [ ] to do\r\n- [x] done\r\n",
+          "code": "var Component=(()=>{var d=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var _=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),g=(e,n)=>{for(var o in n)c(e,o,{get:n[o],enumerable:!0})},r=(e,n,o,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let l of p(n))!x.call(e,l)&&l!==o&&c(e,l,{get:()=>n[l],enumerable:!(i=m(n,l))||i.enumerable});return e};var f=(e,n,o)=>(o=e!=null?d(u(e)):{},r(n||!e||!e.__esModule?c(o,\"default\",{value:e,enumerable:!0}):o,e)),j=e=>r(c({},\"__esModule\",{value:!0}),e);var h=_((F,a)=>{a.exports=_jsx_runtime});var D={};g(D,{default:()=>k,frontmatter:()=>w});var t=f(h()),w={title:\"\\uD14C\\uC2A4\\uD2B8 \\uD398\\uC774\\uC9C0\",category:[\"\\uC11C\\uC591\\uCCA0\\uD559\\uC0AC\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function s(e){let n=Object.assign({h1:\"h1\",h2:\"h2\",p:\"p\",ul:\"ul\",li:\"li\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h1,{children:\"content title\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Autolink literals\"}),`\n`,(0,t.jsx)(n.p,{children:\"www.example.com, https://example.com, and contact@example.com.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Footnote\"}),`\n`,(0,t.jsx)(n.p,{children:\"A note[^1]\"}),`\n`,(0,t.jsx)(n.p,{children:\"[^1]: Big note.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Strikethrough\"}),`\n`,(0,t.jsx)(n.p,{children:\"~one~ or ~~two~~ tildes.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Table\"}),`\n`,(0,t.jsx)(n.p,{children:`| a   | b   |   c |  d  |\\r\n| --- | :-- | --: | :-: |`}),`\n`,(0,t.jsx)(n.h2,{children:\"Tasklist\"}),`\n`,(0,t.jsxs)(n.ul,{children:[`\n`,(0,t.jsx)(n.li,{children:\"[ ] to do\"}),`\n`,(0,t.jsx)(n.li,{children:\"[x] done\"}),`\n`]})]})}function b(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,Object.assign({},e,{children:(0,t.jsx)(s,e)})):s(e)}var k=b;return j(D);})();\n;return Component;"
+        },
+        "_id": "posts/test.mdx",
+        "_raw": {
+          "sourceFilePath": "posts/test.mdx",
+          "sourceFileName": "test.mdx",
+          "sourceFileDir": "posts",
+          "contentType": "mdx",
+          "flattenedPath": "posts/test"
+        },
+        "type": "Post",
+        "url": "/posts/posts/test"
+      },
+      "documentHash": "1669262493336",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "categories/2022-2/2022-2.mdx": {
+      "document": {
+        "title": "2022-2",
+        "id": "twentytwoFall",
+        "subCategory": [
+          "철학개론",
+          "컴퓨터비전"
+        ],
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,d=Object.prototype.hasOwnProperty;var j=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),w=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},a=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of l(n))!d.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var _=(t,n,e)=>(e=t!=null?m(p(t)):{},a(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),b=t=>a(r({},\"__esModule\",{value:!0}),t);var u=j((D,i)=>{i.exports=_jsx_runtime});var M={};w(M,{default:()=>C,frontmatter:()=>g});var c=_(u()),g={title:\"2022-2\",id:\"twentytwoFall\",subCategory:[\"\\uCCA0\\uD559\\uAC1C\\uB860\",\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function y(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var C=y;return b(M);})();\n;return Component;"
+        },
+        "_id": "categories/2022-2/2022-2.mdx",
+        "_raw": {
+          "sourceFilePath": "categories/2022-2/2022-2.mdx",
+          "sourceFileName": "2022-2.mdx",
+          "sourceFileDir": "categories/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "categories/2022-2/2022-2"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1669263433832",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/2022-2/Computer-Vision.mdx": {
+      "document": {
+        "title": "컴퓨터비전",
+        "id": "Computer-Vision",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var f=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=p(n,o))||s.enumerable});return t};var w=(t,n,e)=>(e=t!=null?f(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>i(r({},\"__esModule\",{value:!0}),t);var m=_((O,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>g,frontmatter:()=>M});var c=w(m()),M={title:\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\",id:\"Computer-Vision\"};function u(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function b(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(u,t)})):u(t)}var g=b;return C(h);})();\n;return Component;"
+        },
+        "_id": "categories/2022-2/Computer-Vision.mdx",
+        "_raw": {
+          "sourceFilePath": "categories/2022-2/Computer-Vision.mdx",
+          "sourceFileName": "Computer-Vision.mdx",
+          "sourceFileDir": "categories/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "categories/2022-2/Computer-Vision"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1669263329248",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/2022-2/Introduction-to-Philosophy.mdx": {
+      "document": {
+        "title": "철학개론",
+        "id": "Introduction-to-Philosophy",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var l=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=p(n,o))||s.enumerable});return t};var h=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),w=t=>i(r({},\"__esModule\",{value:!0}),t);var u=l((D,a)=>{a.exports=_jsx_runtime});var y={};_(y,{default:()=>g,frontmatter:()=>M});var c=h(u()),M={title:\"\\uCCA0\\uD559\\uAC1C\\uB860\",id:\"Introduction-to-Philosophy\"};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function b(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var g=b;return w(y);})();\n;return Component;"
+        },
+        "_id": "categories/2022-2/Introduction-to-Philosophy.mdx",
+        "_raw": {
+          "sourceFilePath": "categories/2022-2/Introduction-to-Philosophy.mdx",
+          "sourceFileName": "Introduction-to-Philosophy.mdx",
+          "sourceFileDir": "categories/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "categories/2022-2/Introduction-to-Philosophy"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1669263277071",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/PS/PS.mdx": {
+      "document": {
+        "title": "PS",
+        "id": "ps",
+        "subCategory": [
+          "BOJ",
+          "프로그래머스"
+        ],
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,c)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(c=p(n,o))||c.enumerable});return t};var b=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>i(r({},\"__esModule\",{value:!0}),t);var u=_((y,a)=>{a.exports=_jsx_runtime});var O={};l(O,{default:()=>M,frontmatter:()=>w});var s=b(u()),w={title:\"PS\",id:\"ps\",subCategory:[\"BOJ\",\"\\uD504\\uB85C\\uADF8\\uB798\\uBA38\\uC2A4\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,s.jsx)(n.p,{children:\"ewfwfe\"})}function C(t={}){let{wrapper:n}=t.components||{};return n?(0,s.jsx)(n,Object.assign({},t,{children:(0,s.jsx)(f,t)})):f(t)}var M=C;return g(O);})();\n;return Component;"
+        },
+        "_id": "categories/PS/PS.mdx",
+        "_raw": {
+          "sourceFilePath": "categories/PS/PS.mdx",
+          "sourceFileName": "PS.mdx",
+          "sourceFileDir": "categories/PS",
+          "contentType": "mdx",
+          "flattenedPath": "categories/PS/PS"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1669263564834",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/PS/BOJ.mdx": {
+      "document": {
+        "title": "BOJ",
+        "id": "boj",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var j=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,d=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of j(n))!d.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?u(p(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),w=t=>i(r({},\"__esModule\",{value:!0}),t);var f=_((D,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>g,frontmatter:()=>M});var c=b(f()),M={title:\"BOJ\",id:\"boj\"};function m(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function O(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(m,t)})):m(t)}var g=O;return w(h);})();\n;return Component;"
+        },
+        "_id": "categories/PS/BOJ.mdx",
+        "_raw": {
+          "sourceFilePath": "categories/PS/BOJ.mdx",
+          "sourceFileName": "BOJ.mdx",
+          "sourceFileDir": "categories/PS",
+          "contentType": "mdx",
+          "flattenedPath": "categories/PS/BOJ"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1669263525727",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    }
+  }
+}

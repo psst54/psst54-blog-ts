@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.sidebar {
+  border: 2px solid #f199a9;
+  border-radius: 2rem;
+  padding: 1.5rem;
+
+  flex-shrink: 0;
+  width: 15rem;
+}
+.main {
+  border: 2px solid #f199a9;
+  border-radius: 2rem;
+
+  padding: 1.5rem;
+
+  flex-grow: 1;
+}
+
+.categoryName {
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+}
+.subCategoryName {
+  padding: 0.2rem 0 0.2rem 1rem;
+  font-size: 1rem;
+}
+
+.postTitle {
+  font-weight: 900;
+}
+.postDate {
+  text-align: right;
+}
+
+.styledH1 {
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+}

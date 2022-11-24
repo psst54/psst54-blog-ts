@@ -1,0 +1,21 @@
+{
+  "title": "Two Forms of Pre-rendering",
+  "date": "2021-08-31T00:00:00.000Z",
+  "category": [
+    "서양철학사"
+  ],
+  "body": {
+    "raw": "\r\nNext.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.\r\n\r\n- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.\r\n- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.\r\n\r\nImportantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.\r\n",
+    "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var p=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var r in e)s(n,r,{get:e[r],enumerable:!0})},a=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!f.call(n,i)&&i!==r&&s(n,i,{get:()=>e[i],enumerable:!(o=l(e,i))||o.enumerable});return n};var j=(n,e,r)=>(r=n!=null?g(u(n)):{},a(e||!n||!n.__esModule?s(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>a(s({},\"__esModule\",{value:!0}),n);var d=p((S,c)=>{c.exports=_jsx_runtime});var T={};x(T,{default:()=>M,frontmatter:()=>w});var t=j(d()),w={title:\"Two Forms of Pre-rendering\",category:[\"\\uC11C\\uC591\\uCCA0\\uD559\\uC0AC\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function h(n){let e=Object.assign({p:\"p\",strong:\"strong\",ul:\"ul\",li:\"li\",em:\"em\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.p,{children:[\"Next.js has two forms of pre-rendering: \",(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" and \",(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\". The difference is in \",(0,t.jsx)(e.strong,{children:\"when\"}),\" it generates the HTML for a page.\"]}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" is the pre-rendering method that generates the HTML at \",(0,t.jsx)(e.strong,{children:\"build time\"}),\". The pre-rendered HTML is then \",(0,t.jsx)(e.em,{children:\"reused\"}),\" on each request.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\" is the pre-rendering method that generates the HTML on \",(0,t.jsx)(e.strong,{children:\"each request\"}),\".\"]}),`\n`]}),`\n`,(0,t.jsxs)(e.p,{children:[\"Importantly, Next.js lets you \",(0,t.jsx)(e.strong,{children:\"choose\"}),' which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.']})]})}function y(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(h,n)})):h(n)}var M=y;return _(T);})();\n;return Component;"
+  },
+  "_id": "posts/rrr.mdx",
+  "_raw": {
+    "sourceFilePath": "posts/rrr.mdx",
+    "sourceFileName": "rrr.mdx",
+    "sourceFileDir": "posts",
+    "contentType": "mdx",
+    "flattenedPath": "posts/rrr"
+  },
+  "type": "Post",
+  "url": "/posts/posts/rrr"
+}

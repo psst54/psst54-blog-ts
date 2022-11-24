@@ -1,0 +1,17 @@
+{
+  "title": "서양철학사",
+  "id": "phil1",
+  "body": {
+    "raw": "\r\newfwfe\r\n",
+    "code": "var Component=(()=>{var f=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var l=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),_=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of x(e))!j.call(t,o)&&o!==n&&r(t,o,{get:()=>e[o],enumerable:!(i=p(e,o))||i.enumerable});return t};var b=(t,e,n)=>(n=t!=null?f(d(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>s(r({},\"__esModule\",{value:!0}),t);var m=l((D,a)=>{a.exports=_jsx_runtime});var M={};_(M,{default:()=>C,frontmatter:()=>h});var c=b(m()),h={title:\"\\uC11C\\uC591\\uCCA0\\uD559\\uC0AC\",id:\"phil1\",subCategory:[\"item1\",\"item2\"]};function u(t){let e=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(e.p,{children:\"ewfwfe\"})}function w(t={}){let{wrapper:e}=t.components||{};return e?(0,c.jsx)(e,Object.assign({},t,{children:(0,c.jsx)(u,t)})):u(t)}var C=w;return g(M);})();\n;return Component;"
+  },
+  "_id": "categories/서양철학사 copy.mdx",
+  "_raw": {
+    "sourceFilePath": "categories/서양철학사 copy.mdx",
+    "sourceFileName": "서양철학사 copy.mdx",
+    "sourceFileDir": "categories",
+    "contentType": "mdx",
+    "flattenedPath": "categories/서양철학사 copy"
+  },
+  "type": "Category"
+}

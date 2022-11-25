@@ -35,7 +35,7 @@ export type Post = {
   category?: string[] | undefined
   /** MDX file body */
   body: MDX
-  url: string
+  fileName: string
 }  
 
 /** Nested types */

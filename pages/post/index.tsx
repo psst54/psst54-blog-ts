@@ -11,30 +11,24 @@ import {
 import { compareDesc } from "date-fns";
 import { GetStaticProps } from "next";
 
-export default function Home({
+const Blog = ({
   posts,
   categories,
 }: {
   posts: Post[];
   categories: Category[];
-}) {
+}) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>abs(YES)</title>
-        <meta name="description" content="hi" />
-        <meta
-          name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
-        />
-        <link rel="icon" href="/favicon.ico" />
+        <title>abs(YES) | posts</title>
       </Head>
 
       <Header />
       <Content posts={posts} categories={categories} />
     </div>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
@@ -44,3 +38,5 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return { props: { posts, categories } };
 };
+
+export default Blog;

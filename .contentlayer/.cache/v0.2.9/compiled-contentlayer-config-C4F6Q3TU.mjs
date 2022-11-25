@@ -1,56 +1,60 @@
+// contentlayer.config.ts
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-
-export const Post = defineDocumentType(() => ({
+var Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `post/**/*.mdx`, // Type of file to parse (every mdx in all subfolders)
+  filePathPattern: `post/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
       description: "The title of the post",
-      required: true,
+      required: true
     },
     date: {
       type: "date",
       description: "The date of the post",
-      required: true,
+      required: true
     },
     category: {
       type: "list",
-      of: { type: "string" },
-    },
+      of: { type: "string" }
+    }
   },
   computedFields: {
-    fileName: {
+    url: {
       type: "string",
-      resolve: (post) => `${post._raw.flattenedPath.slice("path/".length)}`,
-    },
-  },
+      resolve: (post) => `/post/${post._raw.sourceFileName}`
+    }
+  }
 }));
-
-export const Category = defineDocumentType(() => ({
+var Category = defineDocumentType(() => ({
   name: "Category",
-  filePathPattern: `category/**/*.mdx`, // Type of file to parse (every mdx in all subfolders)
+  filePathPattern: `category/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
       description: "The title of the post",
-      required: true,
+      required: true
     },
     id: {
       type: "string",
       description: "The date of the post",
-      required: true,
+      required: true
     },
     subCategory: {
       type: "list",
-      of: { type: "string" },
-    },
-  },
+      of: { type: "string" }
+    }
+  }
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "files",
-  documentTypes: [Post, Category],
+  documentTypes: [Post, Category]
 });
+export {
+  Category,
+  Post,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-C4F6Q3TU.mjs.map

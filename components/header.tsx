@@ -4,11 +4,17 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerMenu}>
-        <h2 className={styles.menuTitle}>blog</h2>
-        <h2 className={styles.menuTitle}>about</h2>
+        <a href="/post">
+          <h2 className={styles.menuTitle}>blog</h2>
+        </a>
+        <a href="/about">
+          <h2 className={styles.menuTitle}>about</h2>
+        </a>
       </div>
 
-      <h1 className={styles.title}>title</h1>
+      <a href="/">
+        <h1 className={styles.title}>title</h1>
+      </a>
     </div>
   );
 };

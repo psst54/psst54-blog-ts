@@ -30,23 +30,63 @@
   font-size: 1rem;
 }
 
+.postHeader {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
 .postTitle {
   font-weight: 900;
 }
 .postDate {
   text-align: right;
+  margin-top: 0.3rem;
 }
 
 .styledH1 {
-  margin-top: 1.4rem;
+  padding: 0.5rem 0 0.2rem 0;
 }
 .styledH2 {
-  margin-top: 0.4rem;
+  padding: 0.5rem 0 0.2rem 0;
 }
 .styledH3 {
-  margin-top: 0.4rem;
+  padding: 0.5rem 0 0.2rem 0;
 }
 .styledP {
+  padding: 0.5rem 0;
+}
+.styledA {
+  color: #f199a9;
+  text-decoration: underline;
+}
+.styledCode {
+  padding: 0.1rem 0.2rem;
+  margin: 0 0.2rem;
+  border-radius: 0.3rem;
+  /* background: linear-gradient(
+    to right,
+    #f199a933 15%,
+    #f199a955 85%,
+    #f199a988
+  ); */
+  background: linear-gradient(
+    to right,
+    #68c6f533 15%,
+    #68c6f555 85%,
+    #68c6f588
+  );
+
+  font-family: "Pretendard Variable";
+  font-weight: 600;
+  color: #3f4550;
+}
+.styledLi {
+  padding: 0.5rem 0;
+}
+.styledOl {
+  padding: 0.5rem 0;
+}
+.styledUl {
+  padding: 0.5rem 0;
 }
 
 @media (max-width: 850px) {

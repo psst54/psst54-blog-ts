@@ -3,6 +3,9 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { type Post, type Category } from "contentlayer/generated";
 
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
+
 const Content = ({ post }: { post: Post[] }) => {
   const dateToString = (date) => {
     const dateObj = new Date(date);
@@ -22,8 +25,11 @@ const Content = ({ post }: { post: Post[] }) => {
 
   return (
     <div>
-      <h1 className={styles.postTitle}>{post.title}</h1>
-      <p className={styles.postDate}>{dateToString(post.date)}</p>
+      <div className={styles.postHeader}>
+        <h1 className={styles.postTitle}>{post.title}</h1>
+        <p className={styles.postDate}>{dateToString(post.date)}</p>
+      </div>
+
       <ReactMarkdown
         remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
         components={{
@@ -53,6 +59,63 @@ const Content = ({ post }: { post: Post[] }) => {
               <p {...props} className={styles.styledP}>
                 {children}
               </p>
+            );
+          },
+          li({ node, children, ...props }) {
+            return (
+              <li {...props} className={styles.styledLi}>
+                {children}
+              </li>
+            );
+          },
+          ol({ node, children, ...props }) {
+            return (
+              <ol {...props} className={styles.styledOl}>
+                {children}
+              </ol>
+            );
+          },
+          ul({ node, children, ...props }) {
+            return (
+              <ul {...props} className={styles.styledUl}>
+                {children}
+              </ul>
+            );
+          },
+          a({ node, children, href, ...props }) {
+            return (
+              <a
+                href={href}
+                target="_blank"
+                {...props}
+                className={styles.styledA}
+              >
+                {children}
+              </a>
+            );
+          },
+          code({ node, inline, className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
+            return inline ? (
+              <code className={styles.styledCode} {...props}>
+                {children}
+              </code>
+            ) : match ? (
+              <SyntaxHighlighter
+                children={String(children).replace(/\n$/, "")}
+                style={nord}
+                language={match[1]}
+                PreTag="div"
+                {...props}
+              />
+            ) : (
+              <SyntaxHighlighter
+                children={String(children).replace(/\n$/, "")}
+                style={nord}
+                language="textile"
+                PreTag="div"
+                {...props}
+              />
             );
           },
         }}

@@ -3,14 +3,19 @@ import styles from "@styles/home.module.css";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <div className={styles.headerMenu}>
-        <a href="/post">
-          <h2 className={styles.menuTitle}>blog</h2>
-        </a>
-        <a href="/about">
-          <h2 className={styles.menuTitle}>about</h2>
-        </a>
-      </div>
+      <ul className={styles.headerMenu}>
+        <li className={styles.menuTitle}>
+          <span className={styles.highlight}>
+            <a href="/post">blog</a>
+          </span>
+        </li>
+
+        <li className={styles.menuTitle}>
+          <span className={styles.highlight}>
+            <a href="/about">about</a>
+          </span>
+        </li>
+      </ul>
 
       <a href="/">
         <h1 className={styles.title}>title</h1>

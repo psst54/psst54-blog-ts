@@ -1,0 +1,21 @@
+{
+  "title": "2022-2",
+  "id": "2022-2",
+  "subCategory": [
+    "철학개론",
+    "컴퓨터비전"
+  ],
+  "body": {
+    "raw": "\r\newfwfe\r\n",
+    "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>i(r({},\"__esModule\",{value:!0}),t);var u=_((D,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>M,frontmatter:()=>w});var c=b(u()),w={title:\"2022-2\",id:\"2022-2\",subCategory:[\"\\uCCA0\\uD559\\uAC1C\\uB860\",\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function C(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var M=C;return g(h);})();\n;return Component;"
+  },
+  "_id": "category/2022-2/index.mdx",
+  "_raw": {
+    "sourceFilePath": "category/2022-2/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "category/2022-2",
+    "contentType": "mdx",
+    "flattenedPath": "category/2022-2"
+  },
+  "type": "Category"
+}

@@ -10,16 +10,16 @@ import {
 } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { GetStaticProps } from "next";
-import PostPage from "@components/content/post";
+import CategoryPage from "@components/content/category";
 
 const Post = ({
   posts,
   categories,
-  currentPost,
+  categoryPosts,
 }: {
   posts: Post[];
   categories: Category[];
-  currentPost: Post;
+  categoryPosts: Post[];
 }) => {
   return (
     <div className={styles.container}>
@@ -31,7 +31,7 @@ const Post = ({
       <Content
         posts={posts}
         categories={categories}
-        children={<PostPage post={currentPost} />}
+        children={<CategoryPage categoryPosts={categoryPosts} />}
       />
     </div>
   );
@@ -39,7 +39,7 @@ const Post = ({
 
 export async function getStaticPaths() {
   return {
-    paths: allPosts.map((post) => "/" + post._raw.flattenedPath),
+    paths: allCategories.map((category) => "/category/" + category.id),
     fallback: false,
   };
 }
@@ -49,11 +49,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     compareDesc(new Date(a.date), new Date(b.date))
   );
   const categories: Category[] = allCategories;
-  const currentPost: Post | undefined = allPosts.find(
-    (post) => post?.fileName === params?.id
+
+  const categoryPosts: Post | undefined = allPosts.filter((post) =>
+    post?.category.includes(params?.id)
   );
 
-  return { props: { posts, categories, currentPost } };
+  return { props: { posts, categories, categoryPosts } };
 };
 
 export default Post;

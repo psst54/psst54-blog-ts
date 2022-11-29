@@ -1,0 +1,257 @@
+{
+  "cacheItemsMap": {
+    "category/2022-2/Computer-Vision.mdx": {
+      "document": {
+        "title": "컴퓨터비전",
+        "id": "Computer-Vision",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var f=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=p(n,o))||s.enumerable});return t};var w=(t,n,e)=>(e=t!=null?f(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),C=t=>i(r({},\"__esModule\",{value:!0}),t);var m=_((O,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>g,frontmatter:()=>M});var c=w(m()),M={title:\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\",id:\"Computer-Vision\"};function u(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function b(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(u,t)})):u(t)}var g=b;return C(h);})();\n;return Component;"
+        },
+        "_id": "category/2022-2/Computer-Vision.mdx",
+        "_raw": {
+          "sourceFilePath": "category/2022-2/Computer-Vision.mdx",
+          "sourceFileName": "Computer-Vision.mdx",
+          "sourceFileDir": "category/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "category/2022-2/Computer-Vision"
+        },
+        "type": "Category",
+        "url": "2022-2/Computer-Vision"
+      },
+      "documentHash": "1669263329248",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/2022-2/index.mdx": {
+      "document": {
+        "title": "2022-2",
+        "id": "2022-2",
+        "subCategory": [
+          "철학개론",
+          "컴퓨터비전"
+        ],
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>i(r({},\"__esModule\",{value:!0}),t);var u=_((D,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>M,frontmatter:()=>w});var c=b(u()),w={title:\"2022-2\",id:\"2022-2\",subCategory:[\"\\uCCA0\\uD559\\uAC1C\\uB860\",\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function C(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var M=C;return g(h);})();\n;return Component;"
+        },
+        "_id": "category/2022-2/index.mdx",
+        "_raw": {
+          "sourceFilePath": "category/2022-2/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "category/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "category/2022-2"
+        },
+        "type": "Category",
+        "url": "2022-2"
+      },
+      "documentHash": "1669743437357",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/2022-2/Introduction-to-Philosophy.mdx": {
+      "document": {
+        "title": "철학개론",
+        "id": "Introduction-to-Philosophy",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var x=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var l=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),_=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of x(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=p(n,o))||s.enumerable});return t};var h=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),w=t=>i(r({},\"__esModule\",{value:!0}),t);var u=l((D,a)=>{a.exports=_jsx_runtime});var y={};_(y,{default:()=>g,frontmatter:()=>M});var c=h(u()),M={title:\"\\uCCA0\\uD559\\uAC1C\\uB860\",id:\"Introduction-to-Philosophy\"};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function b(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var g=b;return w(y);})();\n;return Component;"
+        },
+        "_id": "category/2022-2/Introduction-to-Philosophy.mdx",
+        "_raw": {
+          "sourceFilePath": "category/2022-2/Introduction-to-Philosophy.mdx",
+          "sourceFileName": "Introduction-to-Philosophy.mdx",
+          "sourceFileDir": "category/2022-2",
+          "contentType": "mdx",
+          "flattenedPath": "category/2022-2/Introduction-to-Philosophy"
+        },
+        "type": "Category",
+        "url": "2022-2/Introduction-to-Philosophy"
+      },
+      "documentHash": "1669263277071",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/PS/BOJ.mdx": {
+      "document": {
+        "title": "BOJ",
+        "id": "BOJ",
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var O=(t,n,e)=>(e=t!=null?u(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),w=t=>i(r({},\"__esModule\",{value:!0}),t);var f=_((C,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>g,frontmatter:()=>M});var c=O(f()),M={title:\"BOJ\",id:\"BOJ\"};function m(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function b(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(m,t)})):m(t)}var g=b;return w(h);})();\n;return Component;"
+        },
+        "_id": "category/PS/BOJ.mdx",
+        "_raw": {
+          "sourceFilePath": "category/PS/BOJ.mdx",
+          "sourceFileName": "BOJ.mdx",
+          "sourceFileDir": "category/PS",
+          "contentType": "mdx",
+          "flattenedPath": "category/PS/BOJ"
+        },
+        "type": "Category",
+        "url": "PS/BOJ"
+      },
+      "documentHash": "1669743456579",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/PS/index.mdx": {
+      "document": {
+        "title": "PS",
+        "id": "PS",
+        "subCategory": [
+          "BOJ",
+          "프로그래머스"
+        ],
+        "body": {
+          "raw": "\r\newfwfe\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>i(r({},\"__esModule\",{value:!0}),t);var u=_((y,a)=>{a.exports=_jsx_runtime});var O={};l(O,{default:()=>M,frontmatter:()=>w});var c=b(u()),w={title:\"PS\",id:\"PS\",subCategory:[\"BOJ\",\"\\uD504\\uB85C\\uADF8\\uB798\\uBA38\\uC2A4\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function C(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var M=C;return g(O);})();\n;return Component;"
+        },
+        "_id": "category/PS/index.mdx",
+        "_raw": {
+          "sourceFilePath": "category/PS/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "category/PS",
+          "contentType": "mdx",
+          "flattenedPath": "category/PS"
+        },
+        "type": "Category",
+        "url": "PS"
+      },
+      "documentHash": "1669743464579",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "post/ew/index.mdx": {
+      "document": {
+        "title": "Two Forms of Pre-rendering",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "철학개론"
+        ],
+        "body": {
+          "raw": "\r\nNext.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.\r\n\r\n- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.\r\n- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.\r\n\r\nImportantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.\r\n",
+          "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var p=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var r in e)s(n,r,{get:e[r],enumerable:!0})},a=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!f.call(n,i)&&i!==r&&s(n,i,{get:()=>e[i],enumerable:!(o=l(e,i))||o.enumerable});return n};var j=(n,e,r)=>(r=n!=null?g(u(n)):{},a(e||!n||!n.__esModule?s(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>a(s({},\"__esModule\",{value:!0}),n);var d=p((S,c)=>{c.exports=_jsx_runtime});var T={};x(T,{default:()=>M,frontmatter:()=>w});var t=j(d()),w={title:\"Two Forms of Pre-rendering\",category:[\"\\uCCA0\\uD559\\uAC1C\\uB860\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function h(n){let e=Object.assign({p:\"p\",strong:\"strong\",ul:\"ul\",li:\"li\",em:\"em\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.p,{children:[\"Next.js has two forms of pre-rendering: \",(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" and \",(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\". The difference is in \",(0,t.jsx)(e.strong,{children:\"when\"}),\" it generates the HTML for a page.\"]}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" is the pre-rendering method that generates the HTML at \",(0,t.jsx)(e.strong,{children:\"build time\"}),\". The pre-rendered HTML is then \",(0,t.jsx)(e.em,{children:\"reused\"}),\" on each request.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\" is the pre-rendering method that generates the HTML on \",(0,t.jsx)(e.strong,{children:\"each request\"}),\".\"]}),`\n`]}),`\n`,(0,t.jsxs)(e.p,{children:[\"Importantly, Next.js lets you \",(0,t.jsx)(e.strong,{children:\"choose\"}),' which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.']})]})}function y(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(h,n)})):h(n)}var M=y;return _(T);})();\n;return Component;"
+        },
+        "_id": "post/ew/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/ew/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/ew",
+          "contentType": "mdx",
+          "flattenedPath": "post/ew"
+        },
+        "type": "Post",
+        "fileName": "ew"
+      },
+      "documentHash": "1669367729238",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "post/boj12865/index.mdx": {
+      "document": {
+        "title": "BOJ 12865 평범한 배낭",
+        "date": "2021-08-23T00:00:00.000Z",
+        "category": [
+          "BOJ"
+        ],
+        "body": {
+          "raw": "\r\n[https://www.acmicpc.net/problem/12865](https://www.acmicpc.net/problem/12865)\r\n\r\n<aside>\r\n  💡 N개의 물건이 주어지고, 각 물건은 무게 W와 가치 V를 가진다. 배낭에는 최대\r\n  무게 K만큼만 담을 수 있다. 이런 상황에서 배낭에 담긴 물건의 가치를 최대로\r\n  만드는 문제이다.\r\n</aside>\r\n\r\n점화식은 다음과 같이 세운다.\r\n\r\n- `dp[i][j]`는 1~i번째 물건들만을 이용해서 무게가 j를 넘지 않도록 배낭을 채웠을 때, 가치의 합의 최대값이다.\r\n- 우리는 N개의 물건을 이용해서 무게 K까지 채울 수 있으므로, `dp[N][k]`에 최종적으로 우리가 원하는 답이 저장된다.\r\n- 우리가 현재 고려하는 i번째 물건의 무게는 w이고, 가치는 v이다.\r\n\r\n1. i번째 물건을 배낭에 넣지 않는 경우\r\n   - `dp[i][j]`는 1 ~ i번째 물건만을 이용하고 무게가 j를 넘지 않는 경우의 가치의 합의 최대값이다.\r\n   - 따라서 i번째 물건을 이용하지 않는다면, `dp[i][j]`는 1 ~ i - 1번째 물건을 이용하고 무게가 j를 넘지 않는 경우의 가치의 합의 최대값과 같다.\r\n   - 따라서 `dp[i][j] = dp[i - 1][j]`이다.\r\n2. i번째 물건을 배낭에 넣는 경우\r\n   - i번째 물건의 무게를 w, 가치를 v라고 하자.\r\n   - 무게 w의 물건을 넣어서 배낭의 무게가 j가 되도록 하려면, 배낭의 무게가 j - w일 때 i번째 물건을 넣어야 한다. (j - w가 0보다 작은 경우에는 물건을 넣을 수 없다! 따로 예외처리를 해주자.)\r\n   - 따라서 `dp[i][j] = dp[i - 1][j - w] + v`이다.\r\n3. 최종적으로, dp[i][j]는 위 두 경우 중에 더 큰 가치가 들어가야 하므로 `dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v)`가 된다.\r\n\r\n```cpp\r\n#include <iostream>\r\n#include <vector>\r\nusing namespace std;\r\n\r\nint N, K, W, V;\r\nvector<vector<int> > dp;\r\n// dp[갯수][무게]\r\n// dp[N][K]\r\n\r\nint main()\r\n{\r\n\tios::sync_with_stdio(false);\r\n\tcin.tie(0);\r\n\tcout.tie(0);\r\n\r\n\tcin >> N >> K;\r\n\tdp.resize(N + 1, vector<int>(K + 1, 0));\r\n\r\n\tfor (int i = 1; i <= N; i++)\r\n\t{\r\n\t\tcin >> W >> V;\r\n\r\n\t\tfor (int j = 1; j <= K; j++)\r\n\t\t{\r\n\t\t\tdp[i][j] = dp[i - 1][j];\r\n\t\t\tif (W <= j)\r\n\t\t\t\tdp[i][j] = max(dp[i][j], dp[i - 1][j - W] + V);\r\n\t\t}\r\n\t}\r\n\r\n\tcout << dp[N][K];\r\n\r\n\treturn 0;\r\n}\r\n```\r\n",
+          "code": "var Component=(()=>{var h=Object.create;var c=Object.defineProperty;var s=Object.getOwnPropertyDescriptor;var j=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,u=Object.prototype.hasOwnProperty;var w=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),f=(r,n)=>{for(var e in n)c(r,e,{get:n[e],enumerable:!0})},l=(r,n,e,d)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let t of j(n))!u.call(r,t)&&t!==e&&c(r,t,{get:()=>n[t],enumerable:!(d=s(n,t))||d.enumerable});return r};var x=(r,n,e)=>(e=r!=null?h(m(r)):{},l(n||!r||!r.__esModule?c(e,\"default\",{value:r,enumerable:!0}):e,r)),_=r=>l(c({},\"__esModule\",{value:!0}),r);var p=w((O,o)=>{o.exports=_jsx_runtime});var K={};f(K,{default:()=>v,frontmatter:()=>N});var i=x(p()),N={title:\"BOJ 12865 \\uD3C9\\uBC94\\uD55C \\uBC30\\uB0AD\",category:[\"BOJ\"],tags:[[\"DP\",\"BOJ\"]],date:new Date(16296768e5),last_modified_at:new Date(16296768e5)};function a(r){let n=Object.assign({p:\"p\",a:\"a\",ul:\"ul\",li:\"li\",code:\"code\",ol:\"ol\",pre:\"pre\"},r.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(n.p,{children:(0,i.jsx)(n.a,{href:\"https://www.acmicpc.net/problem/12865\",children:\"https://www.acmicpc.net/problem/12865\"})}),`\n`,(0,i.jsx)(\"aside\",{children:(0,i.jsx)(n.p,{children:`\\u{1F4A1} N\\uAC1C\\uC758 \\uBB3C\\uAC74\\uC774 \\uC8FC\\uC5B4\\uC9C0\\uACE0, \\uAC01 \\uBB3C\\uAC74\\uC740 \\uBB34\\uAC8C W\\uC640 \\uAC00\\uCE58 V\\uB97C \\uAC00\\uC9C4\\uB2E4. \\uBC30\\uB0AD\\uC5D0\\uB294 \\uCD5C\\uB300\\r\n\\uBB34\\uAC8C K\\uB9CC\\uD07C\\uB9CC \\uB2F4\\uC744 \\uC218 \\uC788\\uB2E4. \\uC774\\uB7F0 \\uC0C1\\uD669\\uC5D0\\uC11C \\uBC30\\uB0AD\\uC5D0 \\uB2F4\\uAE34 \\uBB3C\\uAC74\\uC758 \\uAC00\\uCE58\\uB97C \\uCD5C\\uB300\\uB85C\\r\n\\uB9CC\\uB4DC\\uB294 \\uBB38\\uC81C\\uC774\\uB2E4.`})}),`\n`,(0,i.jsx)(n.p,{children:\"\\uC810\\uD654\\uC2DD\\uC740 \\uB2E4\\uC74C\\uACFC \\uAC19\\uC774 \\uC138\\uC6B4\\uB2E4.\"}),`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.code,{children:\"dp[i][j]\"}),\"\\uB294 1~i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uB4E4\\uB9CC\\uC744 \\uC774\\uC6A9\\uD574\\uC11C \\uBB34\\uAC8C\\uAC00 j\\uB97C \\uB118\\uC9C0 \\uC54A\\uB3C4\\uB85D \\uBC30\\uB0AD\\uC744 \\uCC44\\uC6E0\\uC744 \\uB54C, \\uAC00\\uCE58\\uC758 \\uD569\\uC758 \\uCD5C\\uB300\\uAC12\\uC774\\uB2E4.\"]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uC6B0\\uB9AC\\uB294 N\\uAC1C\\uC758 \\uBB3C\\uAC74\\uC744 \\uC774\\uC6A9\\uD574\\uC11C \\uBB34\\uAC8C K\\uAE4C\\uC9C0 \\uCC44\\uC6B8 \\uC218 \\uC788\\uC73C\\uBBC0\\uB85C, \",(0,i.jsx)(n.code,{children:\"dp[N][k]\"}),\"\\uC5D0 \\uCD5C\\uC885\\uC801\\uC73C\\uB85C \\uC6B0\\uB9AC\\uAC00 \\uC6D0\\uD558\\uB294 \\uB2F5\\uC774 \\uC800\\uC7A5\\uB41C\\uB2E4.\"]}),`\n`,(0,i.jsx)(n.li,{children:\"\\uC6B0\\uB9AC\\uAC00 \\uD604\\uC7AC \\uACE0\\uB824\\uD558\\uB294 i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC758 \\uBB34\\uAC8C\\uB294 w\\uC774\\uACE0, \\uAC00\\uCE58\\uB294 v\\uC774\\uB2E4.\"}),`\n`]}),`\n`,(0,i.jsxs)(n.ol,{children:[`\n`,(0,i.jsxs)(n.li,{children:[\"i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC744 \\uBC30\\uB0AD\\uC5D0 \\uB123\\uC9C0 \\uC54A\\uB294 \\uACBD\\uC6B0\",`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.code,{children:\"dp[i][j]\"}),\"\\uB294 1 ~ i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uB9CC\\uC744 \\uC774\\uC6A9\\uD558\\uACE0 \\uBB34\\uAC8C\\uAC00 j\\uB97C \\uB118\\uC9C0 \\uC54A\\uB294 \\uACBD\\uC6B0\\uC758 \\uAC00\\uCE58\\uC758 \\uD569\\uC758 \\uCD5C\\uB300\\uAC12\\uC774\\uB2E4.\"]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uB530\\uB77C\\uC11C i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC744 \\uC774\\uC6A9\\uD558\\uC9C0 \\uC54A\\uB294\\uB2E4\\uBA74, \",(0,i.jsx)(n.code,{children:\"dp[i][j]\"}),\"\\uB294 1 ~ i - 1\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC744 \\uC774\\uC6A9\\uD558\\uACE0 \\uBB34\\uAC8C\\uAC00 j\\uB97C \\uB118\\uC9C0 \\uC54A\\uB294 \\uACBD\\uC6B0\\uC758 \\uAC00\\uCE58\\uC758 \\uD569\\uC758 \\uCD5C\\uB300\\uAC12\\uACFC \\uAC19\\uB2E4.\"]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uB530\\uB77C\\uC11C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = dp[i - 1][j]\"}),\"\\uC774\\uB2E4.\"]}),`\n`]}),`\n`]}),`\n`,(0,i.jsxs)(n.li,{children:[\"i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC744 \\uBC30\\uB0AD\\uC5D0 \\uB123\\uB294 \\uACBD\\uC6B0\",`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsx)(n.li,{children:\"i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC758 \\uBB34\\uAC8C\\uB97C w, \\uAC00\\uCE58\\uB97C v\\uB77C\\uACE0 \\uD558\\uC790.\"}),`\n`,(0,i.jsx)(n.li,{children:\"\\uBB34\\uAC8C w\\uC758 \\uBB3C\\uAC74\\uC744 \\uB123\\uC5B4\\uC11C \\uBC30\\uB0AD\\uC758 \\uBB34\\uAC8C\\uAC00 j\\uAC00 \\uB418\\uB3C4\\uB85D \\uD558\\uB824\\uBA74, \\uBC30\\uB0AD\\uC758 \\uBB34\\uAC8C\\uAC00 j - w\\uC77C \\uB54C i\\uBC88\\uC9F8 \\uBB3C\\uAC74\\uC744 \\uB123\\uC5B4\\uC57C \\uD55C\\uB2E4. (j - w\\uAC00 0\\uBCF4\\uB2E4 \\uC791\\uC740 \\uACBD\\uC6B0\\uC5D0\\uB294 \\uBB3C\\uAC74\\uC744 \\uB123\\uC744 \\uC218 \\uC5C6\\uB2E4! \\uB530\\uB85C \\uC608\\uC678\\uCC98\\uB9AC\\uB97C \\uD574\\uC8FC\\uC790.)\"}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uB530\\uB77C\\uC11C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = dp[i - 1][j - w] + v\"}),\"\\uC774\\uB2E4.\"]}),`\n`]}),`\n`]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uCD5C\\uC885\\uC801\\uC73C\\uB85C, dp[i][j]\\uB294 \\uC704 \\uB450 \\uACBD\\uC6B0 \\uC911\\uC5D0 \\uB354 \\uD070 \\uAC00\\uCE58\\uAC00 \\uB4E4\\uC5B4\\uAC00\\uC57C \\uD558\\uBBC0\\uB85C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v)\"}),\"\\uAC00 \\uB41C\\uB2E4.\"]}),`\n`]}),`\n`,(0,i.jsx)(n.pre,{children:(0,i.jsx)(n.code,{className:\"language-cpp\",children:`#include <iostream>\\r\n#include <vector>\\r\nusing namespace std;\\r\n\\r\nint N, K, W, V;\\r\nvector<vector<int> > dp;\\r\n// dp[\\uAC2F\\uC218][\\uBB34\\uAC8C]\\r\n// dp[N][K]\\r\n\\r\nint main()\\r\n{\\r\n\tios::sync_with_stdio(false);\\r\n\tcin.tie(0);\\r\n\tcout.tie(0);\\r\n\\r\n\tcin >> N >> K;\\r\n\tdp.resize(N + 1, vector<int>(K + 1, 0));\\r\n\\r\n\tfor (int i = 1; i <= N; i++)\\r\n\t{\\r\n\t\tcin >> W >> V;\\r\n\\r\n\t\tfor (int j = 1; j <= K; j++)\\r\n\t\t{\\r\n\t\t\tdp[i][j] = dp[i - 1][j];\\r\n\t\t\tif (W <= j)\\r\n\t\t\t\tdp[i][j] = max(dp[i][j], dp[i - 1][j - W] + V);\\r\n\t\t}\\r\n\t}\\r\n\\r\n\tcout << dp[N][K];\\r\n\\r\n\treturn 0;\\r\n}\n`})})]})}function g(r={}){let{wrapper:n}=r.components||{};return n?(0,i.jsx)(n,Object.assign({},r,{children:(0,i.jsx)(a,r)})):a(r)}var v=g;return _(K);})();\n;return Component;"
+        },
+        "_id": "post/boj12865/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/boj12865/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/boj12865",
+          "contentType": "mdx",
+          "flattenedPath": "post/boj12865"
+        },
+        "type": "Post",
+        "fileName": "boj12865"
+      },
+      "documentHash": "1669717438076",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "post/test1/index.mdx": {
+      "document": {
+        "title": "Two Forms of Pre-rendering",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "철학개론"
+        ],
+        "body": {
+          "raw": "\r\ntest\r\n\r\n# head1\r\n\r\n## head2\r\n\r\n### head3\r\n\r\nppwewefeewfewefew\r\n\r\n## Autolink literals\r\n\r\nppwewefeewfewefew\r\n\r\n# content title\r\n\r\n## Autolink literals\r\n\r\n### head3\r\n\r\nppwewefeewfewefew\r\n\r\n### head3\r\n\r\nwefwefeweewe\\\r\nwefewfewfw\r\n\r\nwefwe\r\n\r\n## Autolink literals\r\n\r\nppwewefeewfewefew\r\n\r\nwww.example.com, https://example.com, and contact@example.com.\r\n",
+          "code": "var Component=(()=>{var d=Object.create;var c=Object.defineProperty;var s=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),u=(t,e)=>{for(var r in e)c(t,r,{get:e[r],enumerable:!0})},l=(t,e,r,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let h of f(e))!m.call(t,h)&&h!==r&&c(t,h,{get:()=>e[h],enumerable:!(i=s(e,h))||i.enumerable});return t};var _=(t,e,r)=>(r=t!=null?d(p(t)):{},l(e||!t||!t.__esModule?c(r,\"default\",{value:t,enumerable:!0}):r,t)),g=t=>l(c({},\"__esModule\",{value:!0}),t);var a=x((A,w)=>{w.exports=_jsx_runtime});var D={};u(D,{default:()=>k,frontmatter:()=>j});var n=_(a()),j={title:\"Two Forms of Pre-rendering\",category:[\"\\uCCA0\\uD559\\uAC1C\\uB860\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function o(t){let e=Object.assign({p:\"p\",h1:\"h1\",h2:\"h2\",h3:\"h3\",br:\"br\"},t.components);return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"test\"}),`\n`,(0,n.jsx)(e.h1,{children:\"head1\"}),`\n`,(0,n.jsx)(e.h2,{children:\"head2\"}),`\n`,(0,n.jsx)(e.h3,{children:\"head3\"}),`\n`,(0,n.jsx)(e.p,{children:\"ppwewefeewfewefew\"}),`\n`,(0,n.jsx)(e.h2,{children:\"Autolink literals\"}),`\n`,(0,n.jsx)(e.p,{children:\"ppwewefeewfewefew\"}),`\n`,(0,n.jsx)(e.h1,{children:\"content title\"}),`\n`,(0,n.jsx)(e.h2,{children:\"Autolink literals\"}),`\n`,(0,n.jsx)(e.h3,{children:\"head3\"}),`\n`,(0,n.jsx)(e.p,{children:\"ppwewefeewfewefew\"}),`\n`,(0,n.jsx)(e.h3,{children:\"head3\"}),`\n`,(0,n.jsxs)(e.p,{children:[\"wefwefeweewe\",(0,n.jsx)(e.br,{}),`\n`,\"wefewfewfw\"]}),`\n`,(0,n.jsx)(e.p,{children:\"wefwe\"}),`\n`,(0,n.jsx)(e.h2,{children:\"Autolink literals\"}),`\n`,(0,n.jsx)(e.p,{children:\"ppwewefeewfewefew\"}),`\n`,(0,n.jsx)(e.p,{children:\"www.example.com, https://example.com, and contact@example.com.\"})]})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(o,t)})):o(t)}var k=b;return g(D);})();\n;return Component;"
+        },
+        "_id": "post/test1/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/test1/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/test1",
+          "contentType": "mdx",
+          "flattenedPath": "post/test1"
+        },
+        "type": "Post",
+        "fileName": "test1"
+      },
+      "documentHash": "1669582022318",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "post/next-js/index.mdx": {
+      "document": {
+        "title": "이렇게 글을 쓸 수 있다",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "철학개론"
+        ],
+        "body": {
+          "raw": "\r\nNext.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.\r\n\r\n- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.\r\n- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.\r\n\r\nImportantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.\r\n",
+          "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var r in e)s(n,r,{get:e[r],enumerable:!0})},a=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!p.call(n,i)&&i!==r&&s(n,i,{get:()=>e[i],enumerable:!(o=l(e,i))||o.enumerable});return n};var j=(n,e,r)=>(r=n!=null?g(u(n)):{},a(e||!n||!n.__esModule?s(r,\"default\",{value:n,enumerable:!0}):r,n)),_=n=>a(s({},\"__esModule\",{value:!0}),n);var d=f((T,c)=>{c.exports=_jsx_runtime});var w={};x(w,{default:()=>b,frontmatter:()=>y});var t=j(d()),y={title:\"\\uC774\\uB807\\uAC8C \\uAE00\\uC744 \\uC4F8 \\uC218 \\uC788\\uB2E4\",category:[\"\\uCCA0\\uD559\\uAC1C\\uB860\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function h(n){let e=Object.assign({p:\"p\",strong:\"strong\",ul:\"ul\",li:\"li\",em:\"em\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.p,{children:[\"Next.js has two forms of pre-rendering: \",(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" and \",(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\". The difference is in \",(0,t.jsx)(e.strong,{children:\"when\"}),\" it generates the HTML for a page.\"]}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Static Generation\"}),\" is the pre-rendering method that generates the HTML at \",(0,t.jsx)(e.strong,{children:\"build time\"}),\". The pre-rendered HTML is then \",(0,t.jsx)(e.em,{children:\"reused\"}),\" on each request.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Server-side Rendering\"}),\" is the pre-rendering method that generates the HTML on \",(0,t.jsx)(e.strong,{children:\"each request\"}),\".\"]}),`\n`]}),`\n`,(0,t.jsxs)(e.p,{children:[\"Importantly, Next.js lets you \",(0,t.jsx)(e.strong,{children:\"choose\"}),' which pre-rendering form to use for each page. You can create a \"hybrid\" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.']})]})}function M(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(h,n)})):h(n)}var b=M;return _(w);})();\n;return Component;"
+        },
+        "_id": "post/next-js/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/next-js/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/next-js",
+          "contentType": "mdx",
+          "flattenedPath": "post/next-js"
+        },
+        "type": "Post",
+        "fileName": "next-js"
+      },
+      "documentHash": "1669369229085",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    },
+    "post/test2/index.mdx": {
+      "document": {
+        "title": "테스트 페이지",
+        "date": "2021-08-31T00:00:00.000Z",
+        "category": [
+          "컴퓨터비전"
+        ],
+        "body": {
+          "raw": "\r\n# content title\r\n\r\n## Autolink literals\r\n\r\nwww.example.com, https://example.com, and contact@example.com.\r\n\r\n## Footnote\r\n\r\nA note[^1]\r\n\r\n[^1]: Big note.\r\n\r\n## Strikethrough\r\n\r\n~one~ or ~~two~~ tildes.\r\n\r\n## Table\r\n\r\n| a   | b   |   c |  d  |\r\n| --- | :-- | --: | :-: |\r\n\r\n## Tasklist\r\n\r\n- [ ] to do\r\n- [x] done\r\n",
+          "code": "var Component=(()=>{var d=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var _=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),g=(e,n)=>{for(var o in n)c(e,o,{get:n[o],enumerable:!0})},r=(e,n,o,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let l of p(n))!x.call(e,l)&&l!==o&&c(e,l,{get:()=>n[l],enumerable:!(i=m(n,l))||i.enumerable});return e};var f=(e,n,o)=>(o=e!=null?d(u(e)):{},r(n||!e||!e.__esModule?c(o,\"default\",{value:e,enumerable:!0}):o,e)),j=e=>r(c({},\"__esModule\",{value:!0}),e);var h=_((F,a)=>{a.exports=_jsx_runtime});var D={};g(D,{default:()=>k,frontmatter:()=>w});var t=f(h()),w={title:\"\\uD14C\\uC2A4\\uD2B8 \\uD398\\uC774\\uC9C0\",category:[\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"],tags:[[\"Blog\",\"Github\"]],toc:!1,toc_sticky:!1,date:new Date(1630368e6),last_modified_at:new Date(1630368e6)};function s(e){let n=Object.assign({h1:\"h1\",h2:\"h2\",p:\"p\",ul:\"ul\",li:\"li\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h1,{children:\"content title\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Autolink literals\"}),`\n`,(0,t.jsx)(n.p,{children:\"www.example.com, https://example.com, and contact@example.com.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Footnote\"}),`\n`,(0,t.jsx)(n.p,{children:\"A note[^1]\"}),`\n`,(0,t.jsx)(n.p,{children:\"[^1]: Big note.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Strikethrough\"}),`\n`,(0,t.jsx)(n.p,{children:\"~one~ or ~~two~~ tildes.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Table\"}),`\n`,(0,t.jsx)(n.p,{children:`| a   | b   |   c |  d  |\\r\n| --- | :-- | --: | :-: |`}),`\n`,(0,t.jsx)(n.h2,{children:\"Tasklist\"}),`\n`,(0,t.jsxs)(n.ul,{children:[`\n`,(0,t.jsx)(n.li,{children:\"[ ] to do\"}),`\n`,(0,t.jsx)(n.li,{children:\"[x] done\"}),`\n`]})]})}function b(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,Object.assign({},e,{children:(0,t.jsx)(s,e)})):s(e)}var k=b;return j(D);})();\n;return Component;"
+        },
+        "_id": "post/test2/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/test2/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/test2",
+          "contentType": "mdx",
+          "flattenedPath": "post/test2"
+        },
+        "type": "Post",
+        "fileName": "test2"
+      },
+      "documentHash": "1669367724888",
+      "hasWarnings": true,
+      "documentTypeName": "Post"
+    }
+  }
+}

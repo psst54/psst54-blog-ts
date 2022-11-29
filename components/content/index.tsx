@@ -27,7 +27,9 @@ const Content = ({
           (category) =>
             category.subCategory && (
               <div key={category.title}>
-                <ul className={styles.categoryName}>{category.title}</ul>
+                <ul className={styles.categoryName}>
+                  <a href={`/category/${category.id}`}>{category.title}</a>
+                </ul>
 
                 {categories.map(
                   (subCategory) =>
@@ -36,7 +38,9 @@ const Content = ({
                         className={styles.subCategoryName}
                         key={subCategory.title}
                       >
-                        {subCategory.title} ({subCategory.cnt})
+                        <a href={`/category/${subCategory.id}`}>
+                          {subCategory.title} ({subCategory.cnt})
+                        </a>
                       </ul>
                     )
                 )}

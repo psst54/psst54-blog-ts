@@ -6,6 +6,10 @@ import { type Post, type Category } from "contentlayer/generated";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
+
 const Content = ({ post }: { post: Post[] }) => {
   const dateToString = (date) => {
     const dateObj = new Date(date);
@@ -31,7 +35,8 @@ const Content = ({ post }: { post: Post[] }) => {
       </div>
 
       <ReactMarkdown
-        remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
+        remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath]}
+        rehypePlugins={[rehypeKatex]}
         components={{
           h1({ node, children, ...props }) {
             return (

@@ -16,7 +16,8 @@
           "contentType": "mdx",
           "flattenedPath": "category/2022-2/Computer-Vision"
         },
-        "type": "Category"
+        "type": "Category",
+        "fileName": "ory/2022-2/Computer-Vision"
       },
       "documentHash": "1669263329248",
       "hasWarnings": false,
@@ -42,7 +43,8 @@
           "contentType": "mdx",
           "flattenedPath": "category/2022-2"
         },
-        "type": "Category"
+        "type": "Category",
+        "fileName": "ory/2022-2"
       },
       "documentHash": "1669743437357",
       "hasWarnings": false,
@@ -64,7 +66,8 @@
           "contentType": "mdx",
           "flattenedPath": "category/2022-2/Introduction-to-Philosophy"
         },
-        "type": "Category"
+        "type": "Category",
+        "fileName": "ory/2022-2/Introduction-to-Philosophy"
       },
       "documentHash": "1669263277071",
       "hasWarnings": false,
@@ -86,7 +89,8 @@
           "contentType": "mdx",
           "flattenedPath": "category/PS/BOJ"
         },
-        "type": "Category"
+        "type": "Category",
+        "fileName": "ory/PS/BOJ"
       },
       "documentHash": "1669743456579",
       "hasWarnings": false,
@@ -112,7 +116,8 @@
           "contentType": "mdx",
           "flattenedPath": "category/PS"
         },
-        "type": "Category"
+        "type": "Category",
+        "fileName": "ory/PS"
       },
       "documentHash": "1669743464579",
       "hasWarnings": false,
@@ -140,33 +145,7 @@
         "type": "Post",
         "fileName": "boj12865"
       },
-      "documentHash": "1669747112729",
-      "hasWarnings": true,
-      "documentTypeName": "Post"
-    },
-    "post/boj7579/index.mdx": {
-      "document": {
-        "title": "BOJ 7579 앱",
-        "date": "2021-08-23T00:00:00.000Z",
-        "category": [
-          "BOJ"
-        ],
-        "body": {
-          "raw": "\r\n# 7579 앱\r\n\r\n[https://www.acmicpc.net/problem/7579](https://www.acmicpc.net/problem/7579)\r\n\r\nN개의 앱 $A_1, ..., A_N$이 있다. 앱 $A_i$는 $m_i$의 메모리를 사용중이고, 이를 비활성한 후 다시 실행할 때 $c_i$의 비용이 든다. 이 중에서 몇 개를 비활성화시켜 M 이상의 메모리를 확보하는 동시에, $c_i$의 합을 최소로 만드는 문제이다.\r\n\r\n$\r\n1 \\leq N \\leq 100 \\newline\r\n1 \\leq M \\leq 10,000,000 \\newline\r\n1 \\leq m_1, ..., m_N \\leq 10,000,000 \\newline\r\n0 \\leq c_1, ..., c_N \\leq 100 \\newline\r\nM \\leq m_1 + m_2 + ... + m_N\r\n$\r\n\r\n- 평범한 배낭 문제는 _\"N개의 물건을 잘 이용해 무게(K)를 넘지 않으면서 가치(V)를 최대로_\" 만드는 문제이고,\r\n  이 문제는 _\"N개의 앱을 잘 이용해 메모리(M)을 넘기면서 비용(C)을 최소로\"_ 만드는 문제이다.\r\n- 평범한 배낭 문제에서처럼 dp[갯수][메모리]처럼 사용하기에는 M값이 너무 크다.\r\n- 하지만 c를 이용한다면? 모든 c는 100 이하이고, N도 100 이하이므로, 다시 실행하는 데 필요한 비용은 0~10000이 된다. c를 이용해서 dp테이블을 채우고 dp[N][c] (0 ≤ c ≤ 10000)중, M을 넘으면서 c가 가장 작을 때 c값이 정답이 된다.\r\n\r\n따라서 점화식은 다음처럼 세운다.\r\n\r\n- dp[i][j]는 1~i번째 앱 중 몇 개를 비활성화시키고, 그들을 다시 실행할 경우 cost의 합이 j일 때, 최대로 확보 가능한 메모리이다.\r\n\r\n1. 앱 i를 비활성화시키지 않는 경우\r\n   - dp[i][j]는 1 ~ i-1번째 앱 중 몇 개를 비활성화시키고 재실행 비용이 j일 때의 확보 가능한 최대 메모리와 같다.\r\n   - 따라서 `dp[i][j] = dp[i - 1][j]`이다.\r\n2. 앱 i를 비활성화시키는 경우\r\n   - 앱 i의 재실행 비용을 c, 앱 i를 비활성화시켜 확보할 수 있는 메모리를 m이라고 한다.\r\n   - i - 1번째까지를 고려했을 때 비용이 j - c인 상황에서 앱 i를 비활성화시켜야 한다.\r\n   - 따라서 `dp[i][j] = dp[i - 1][j - c]`이다.\r\n3. 같은 비용으로 더 많은 메모리를 확보하는 것이 이득이므로 `dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - c])`이다.\r\n\r\n- 아래 코드에서 마지막 for문은 M을 넘길 수 있는 가장 작은 c를 찾는 for문이다.\r\n\r\n```cpp\r\n#include <iostream>\r\n#include <vector>\r\nusing namespace std;\r\n\r\nint N, M, m[101], c;\r\nvector<vector<int> > dp;\r\n// dp[N][N*c]\r\n\r\nint main()\r\n{\r\n\tios::sync_with_stdio(false);\r\n\tcin.tie(0);\r\n\tcout.tie(0);\r\n\r\n\tcin >> N >> M;\r\n\tfor (int i = 1; i <= N; i++)\r\n\t\tcin >> m[i];\r\n\tdp.resize(N + 1, vector<int>(10001, 0));\r\n\r\n\tfor (int i = 1; i <= N; i++)\r\n\t{\r\n\t\tcin >> c;\r\n\r\n\t\tfor (int j = 0; j <= 10000; j++)\r\n\t\t{\r\n\t\t\tdp[i][j] = dp[i - 1][j];\r\n\t\t\tif (j >= c)\r\n\t\t\t\tdp[i][j] = max(dp[i][j], dp[i - 1][j - c] + m[i]);\r\n\t\t}\r\n\t}\r\n\r\n\tfor (int j = 0; j <= 10000; j++)\r\n\t{\r\n\t\tif (dp[N][j] >= M)\r\n\t\t{\r\n\t\t\tcout << j;\r\n\t\t\treturn 0;\r\n\t\t}\r\n\t}\r\n\r\n\treturn 0;\r\n}\r\n```\r\n",
-          "code": "var Component=(()=>{var a=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var s=Object.getOwnPropertyNames;var j=Object.getPrototypeOf,_=Object.prototype.hasOwnProperty;var u=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports),N=(r,n)=>{for(var e in n)c(r,e,{get:n[e],enumerable:!0})},d=(r,n,e,l)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let t of s(n))!_.call(r,t)&&t!==e&&c(r,t,{get:()=>n[t],enumerable:!(l=m(n,t))||l.enumerable});return r};var f=(r,n,e)=>(e=r!=null?a(j(r)):{},d(n||!r||!r.__esModule?c(e,\"default\",{value:r,enumerable:!0}):e,r)),w=r=>d(c({},\"__esModule\",{value:!0}),r);var p=u((D,o)=>{o.exports=_jsx_runtime});var g={};N(g,{default:()=>x,frontmatter:()=>M});var i=f(p()),M={title:\"BOJ 7579 \\uC571\",category:[\"BOJ\"],tags:[[\"DP\",\"BOJ\"]],date:new Date(16296768e5),last_modified_at:new Date(16296768e5)};function h(r){let n=Object.assign({h1:\"h1\",p:\"p\",a:\"a\",ul:\"ul\",li:\"li\",em:\"em\",ol:\"ol\",code:\"code\",pre:\"pre\"},r.components);return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(n.h1,{children:\"7579 \\uC571\"}),`\n`,(0,i.jsx)(n.p,{children:(0,i.jsx)(n.a,{href:\"https://www.acmicpc.net/problem/7579\",children:\"https://www.acmicpc.net/problem/7579\"})}),`\n`,(0,i.jsx)(n.p,{children:\"N\\uAC1C\\uC758 \\uC571 $A_1, ..., A_N$\\uC774 \\uC788\\uB2E4. \\uC571 $A_i$\\uB294 $m_i$\\uC758 \\uBA54\\uBAA8\\uB9AC\\uB97C \\uC0AC\\uC6A9\\uC911\\uC774\\uACE0, \\uC774\\uB97C \\uBE44\\uD65C\\uC131\\uD55C \\uD6C4 \\uB2E4\\uC2DC \\uC2E4\\uD589\\uD560 \\uB54C $c_i$\\uC758 \\uBE44\\uC6A9\\uC774 \\uB4E0\\uB2E4. \\uC774 \\uC911\\uC5D0\\uC11C \\uBA87 \\uAC1C\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uCF1C M \\uC774\\uC0C1\\uC758 \\uBA54\\uBAA8\\uB9AC\\uB97C \\uD655\\uBCF4\\uD558\\uB294 \\uB3D9\\uC2DC\\uC5D0, $c_i$\\uC758 \\uD569\\uC744 \\uCD5C\\uC18C\\uB85C \\uB9CC\\uB4DC\\uB294 \\uBB38\\uC81C\\uC774\\uB2E4.\"}),`\n`,(0,i.jsx)(n.p,{children:`$\\r\n1 \\\\leq N \\\\leq 100 \\\\newline\\r\n1 \\\\leq M \\\\leq 10,000,000 \\\\newline\\r\n1 \\\\leq m_1, ..., m_N \\\\leq 10,000,000 \\\\newline\\r\n0 \\\\leq c_1, ..., c_N \\\\leq 100 \\\\newline\\r\nM \\\\leq m_1 + m_2 + ... + m_N\\r\n$`}),`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsxs)(n.li,{children:[\"\\uD3C9\\uBC94\\uD55C \\uBC30\\uB0AD \\uBB38\\uC81C\\uB294 \",(0,i.jsx)(n.em,{children:'\"N\\uAC1C\\uC758 \\uBB3C\\uAC74\\uC744 \\uC798 \\uC774\\uC6A9\\uD574 \\uBB34\\uAC8C(K)\\uB97C \\uB118\\uC9C0 \\uC54A\\uC73C\\uBA74\\uC11C \\uAC00\\uCE58(V)\\uB97C \\uCD5C\\uB300\\uB85C'}),`\" \\uB9CC\\uB4DC\\uB294 \\uBB38\\uC81C\\uC774\\uACE0,\\r\n\\uC774 \\uBB38\\uC81C\\uB294 `,(0,i.jsx)(n.em,{children:'\"N\\uAC1C\\uC758 \\uC571\\uC744 \\uC798 \\uC774\\uC6A9\\uD574 \\uBA54\\uBAA8\\uB9AC(M)\\uC744 \\uB118\\uAE30\\uBA74\\uC11C \\uBE44\\uC6A9(C)\\uC744 \\uCD5C\\uC18C\\uB85C\"'}),\" \\uB9CC\\uB4DC\\uB294 \\uBB38\\uC81C\\uC774\\uB2E4.\"]}),`\n`,(0,i.jsx)(n.li,{children:\"\\uD3C9\\uBC94\\uD55C \\uBC30\\uB0AD \\uBB38\\uC81C\\uC5D0\\uC11C\\uCC98\\uB7FC dp[\\uAC2F\\uC218][\\uBA54\\uBAA8\\uB9AC]\\uCC98\\uB7FC \\uC0AC\\uC6A9\\uD558\\uAE30\\uC5D0\\uB294 M\\uAC12\\uC774 \\uB108\\uBB34 \\uD06C\\uB2E4.\"}),`\n`,(0,i.jsx)(n.li,{children:\"\\uD558\\uC9C0\\uB9CC c\\uB97C \\uC774\\uC6A9\\uD55C\\uB2E4\\uBA74? \\uBAA8\\uB4E0 c\\uB294 100 \\uC774\\uD558\\uC774\\uACE0, N\\uB3C4 100 \\uC774\\uD558\\uC774\\uBBC0\\uB85C, \\uB2E4\\uC2DC \\uC2E4\\uD589\\uD558\\uB294 \\uB370 \\uD544\\uC694\\uD55C \\uBE44\\uC6A9\\uC740 0~10000\\uC774 \\uB41C\\uB2E4. c\\uB97C \\uC774\\uC6A9\\uD574\\uC11C dp\\uD14C\\uC774\\uBE14\\uC744 \\uCC44\\uC6B0\\uACE0 dp[N][c] (0 \\u2264 c \\u2264 10000)\\uC911, M\\uC744 \\uB118\\uC73C\\uBA74\\uC11C c\\uAC00 \\uAC00\\uC7A5 \\uC791\\uC744 \\uB54C c\\uAC12\\uC774 \\uC815\\uB2F5\\uC774 \\uB41C\\uB2E4.\"}),`\n`]}),`\n`,(0,i.jsx)(n.p,{children:\"\\uB530\\uB77C\\uC11C \\uC810\\uD654\\uC2DD\\uC740 \\uB2E4\\uC74C\\uCC98\\uB7FC \\uC138\\uC6B4\\uB2E4.\"}),`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsx)(n.li,{children:\"dp[i][j]\\uB294 1~i\\uBC88\\uC9F8 \\uC571 \\uC911 \\uBA87 \\uAC1C\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uD0A4\\uACE0, \\uADF8\\uB4E4\\uC744 \\uB2E4\\uC2DC \\uC2E4\\uD589\\uD560 \\uACBD\\uC6B0 cost\\uC758 \\uD569\\uC774 j\\uC77C \\uB54C, \\uCD5C\\uB300\\uB85C \\uD655\\uBCF4 \\uAC00\\uB2A5\\uD55C \\uBA54\\uBAA8\\uB9AC\\uC774\\uB2E4.\"}),`\n`]}),`\n`,(0,i.jsxs)(n.ol,{children:[`\n`,(0,i.jsxs)(n.li,{children:[\"\\uC571 i\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uD0A4\\uC9C0 \\uC54A\\uB294 \\uACBD\\uC6B0\",`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsx)(n.li,{children:\"dp[i][j]\\uB294 1 ~ i-1\\uBC88\\uC9F8 \\uC571 \\uC911 \\uBA87 \\uAC1C\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uD0A4\\uACE0 \\uC7AC\\uC2E4\\uD589 \\uBE44\\uC6A9\\uC774 j\\uC77C \\uB54C\\uC758 \\uD655\\uBCF4 \\uAC00\\uB2A5\\uD55C \\uCD5C\\uB300 \\uBA54\\uBAA8\\uB9AC\\uC640 \\uAC19\\uB2E4.\"}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uB530\\uB77C\\uC11C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = dp[i - 1][j]\"}),\"\\uC774\\uB2E4.\"]}),`\n`]}),`\n`]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uC571 i\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uD0A4\\uB294 \\uACBD\\uC6B0\",`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsx)(n.li,{children:\"\\uC571 i\\uC758 \\uC7AC\\uC2E4\\uD589 \\uBE44\\uC6A9\\uC744 c, \\uC571 i\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uCF1C \\uD655\\uBCF4\\uD560 \\uC218 \\uC788\\uB294 \\uBA54\\uBAA8\\uB9AC\\uB97C m\\uC774\\uB77C\\uACE0 \\uD55C\\uB2E4.\"}),`\n`,(0,i.jsx)(n.li,{children:\"i - 1\\uBC88\\uC9F8\\uAE4C\\uC9C0\\uB97C \\uACE0\\uB824\\uD588\\uC744 \\uB54C \\uBE44\\uC6A9\\uC774 j - c\\uC778 \\uC0C1\\uD669\\uC5D0\\uC11C \\uC571 i\\uB97C \\uBE44\\uD65C\\uC131\\uD654\\uC2DC\\uCF1C\\uC57C \\uD55C\\uB2E4.\"}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uB530\\uB77C\\uC11C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = dp[i - 1][j - c]\"}),\"\\uC774\\uB2E4.\"]}),`\n`]}),`\n`]}),`\n`,(0,i.jsxs)(n.li,{children:[\"\\uAC19\\uC740 \\uBE44\\uC6A9\\uC73C\\uB85C \\uB354 \\uB9CE\\uC740 \\uBA54\\uBAA8\\uB9AC\\uB97C \\uD655\\uBCF4\\uD558\\uB294 \\uAC83\\uC774 \\uC774\\uB4DD\\uC774\\uBBC0\\uB85C \",(0,i.jsx)(n.code,{children:\"dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - c])\"}),\"\\uC774\\uB2E4.\"]}),`\n`]}),`\n`,(0,i.jsxs)(n.ul,{children:[`\n`,(0,i.jsx)(n.li,{children:\"\\uC544\\uB798 \\uCF54\\uB4DC\\uC5D0\\uC11C \\uB9C8\\uC9C0\\uB9C9 for\\uBB38\\uC740 M\\uC744 \\uB118\\uAE38 \\uC218 \\uC788\\uB294 \\uAC00\\uC7A5 \\uC791\\uC740 c\\uB97C \\uCC3E\\uB294 for\\uBB38\\uC774\\uB2E4.\"}),`\n`]}),`\n`,(0,i.jsx)(n.pre,{children:(0,i.jsx)(n.code,{className:\"language-cpp\",children:`#include <iostream>\\r\n#include <vector>\\r\nusing namespace std;\\r\n\\r\nint N, M, m[101], c;\\r\nvector<vector<int> > dp;\\r\n// dp[N][N*c]\\r\n\\r\nint main()\\r\n{\\r\n\tios::sync_with_stdio(false);\\r\n\tcin.tie(0);\\r\n\tcout.tie(0);\\r\n\\r\n\tcin >> N >> M;\\r\n\tfor (int i = 1; i <= N; i++)\\r\n\t\tcin >> m[i];\\r\n\tdp.resize(N + 1, vector<int>(10001, 0));\\r\n\\r\n\tfor (int i = 1; i <= N; i++)\\r\n\t{\\r\n\t\tcin >> c;\\r\n\\r\n\t\tfor (int j = 0; j <= 10000; j++)\\r\n\t\t{\\r\n\t\t\tdp[i][j] = dp[i - 1][j];\\r\n\t\t\tif (j >= c)\\r\n\t\t\t\tdp[i][j] = max(dp[i][j], dp[i - 1][j - c] + m[i]);\\r\n\t\t}\\r\n\t}\\r\n\\r\n\tfor (int j = 0; j <= 10000; j++)\\r\n\t{\\r\n\t\tif (dp[N][j] >= M)\\r\n\t\t{\\r\n\t\t\tcout << j;\\r\n\t\t\treturn 0;\\r\n\t\t}\\r\n\t}\\r\n\\r\n\treturn 0;\\r\n}\n`})})]})}function $(r={}){let{wrapper:n}=r.components||{};return n?(0,i.jsx)(n,Object.assign({},r,{children:(0,i.jsx)(h,r)})):h(r)}var x=$;return w(g);})();\n;return Component;"
-        },
-        "_id": "post/boj7579/index.mdx",
-        "_raw": {
-          "sourceFilePath": "post/boj7579/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "post/boj7579",
-          "contentType": "mdx",
-          "flattenedPath": "post/boj7579"
-        },
-        "type": "Post",
-        "fileName": "boj7579"
-      },
-      "documentHash": "1669747107163",
+      "documentHash": "1669717438076",
       "hasWarnings": true,
       "documentTypeName": "Post"
     },

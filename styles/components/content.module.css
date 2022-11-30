@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  width: 100%;
   gap: 20px;
+  width: 100%;
 }
 
 .sidebar {
@@ -15,10 +15,10 @@
 .main {
   border: 2px solid #f199a9;
   border-radius: 2rem;
-
   padding: 1.5rem;
 
-  flex-grow: 1;
+  width: 500px;
+  flex: 1;
 }
 
 .categoryName {
@@ -53,6 +53,7 @@
 }
 .styledP {
   padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 .styledA {
   color: #f199a9;
@@ -62,22 +63,11 @@
   padding: 0.1rem 0.2rem;
   margin: 0 0.2rem;
   border-radius: 0.3rem;
-  /* background: linear-gradient(
-    to right,
-    #f199a933 15%,
-    #f199a955 85%,
-    #f199a988
-  ); */
-  background: linear-gradient(
-    to right,
-    #68c6f533 15%,
-    #68c6f555 85%,
-    #68c6f588
-  );
+  background: #2f343f;
 
   font-family: "Pretendard Variable";
   font-weight: 600;
-  color: #3f4550;
+  color: #fff;
 }
 .styledLi {
   padding: 0.5rem 0;
@@ -87,6 +77,29 @@
 }
 .styledUl {
   padding: 0.5rem 0;
+}
+.styledBox {
+  background: #68c6f511;
+
+  border: 2px solid #68c6f5;
+  border-radius: 0.8rem;
+
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0;
+}
+.styledHighlight {
+  padding: 0.1rem 0.2rem;
+  margin: 0 0.2rem;
+  border-radius: 0.3rem;
+  background: linear-gradient(
+    to right,
+    #68c6f533 15%,
+    #68c6f555 85%,
+    #68c6f588
+  );
+
+  font-weight: 600;
+  color: #3f4550;
 }
 
 @media (max-width: 850px) {

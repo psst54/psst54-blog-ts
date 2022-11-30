@@ -9,6 +9,17 @@ import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
+import { redirect } from "next/dist/server/api-utils";
+
+import { MDXProvider } from "@mdx-js/react";
+import { useMDXComponent } from "next-contentlayer/hooks";
+
+const Aside = ({ children, ...props }) => {
+  return <div className={styles.styledBox}>{children}</div>;
+};
+const Highlight = ({ children, ...props }) => {
+  return <span className={styles.styledHighlight}>{children}</span>;
+};
 
 const Content = ({ post }: { post: Post[] }) => {
   const dateToString = (date) => {
@@ -27,6 +38,42 @@ const Content = ({ post }: { post: Post[] }) => {
     );
   };
 
+  const components = {
+    h1: (props) => <h1 className={styles.styledH1} {...props} />,
+    h2: (props) => <h2 className={styles.styledH2} {...props} />,
+    h3: (props) => <h3 className={styles.styledH3} {...props} />,
+    h4: (props) => <h4 className={styles.styledH3} {...props} />,
+    h5: (props) => <h5 className={styles.styledH3} {...props} />,
+    h6: (props) => <h6 className={styles.styledH3} {...props} />,
+    p: (props) => <p className={styles.styledP} {...props} />,
+    a: (props) => <a className={styles.styledA} {...props} />,
+    li: (props) => <li className={styles.styledLi} {...props} />,
+    ol: (props) => <ol className={styles.styledOl} {...props} />,
+    ul: (props) => <ul className={styles.styledUl} {...props} />,
+    pre: (props) => <pre style={{ overflow: "auto" }} {...props} />,
+    code: ({ className, children, ...props }) => {
+      const match = /language-(\w+)/.exec(className || "");
+
+      return match ? (
+        <SyntaxHighlighter
+          children={String(children).replace(/\n$/, "")}
+          style={nord}
+          language={match[1]}
+          PreTag="div"
+          {...props}
+        />
+      ) : (
+        <code className={styles.styledCode} {...props}>
+          {children}
+        </code>
+      );
+    },
+    Aside,
+    Highlight,
+  };
+
+  const MDXContent = useMDXComponent(post.body.code);
+
   return (
     <div>
       <div className={styles.postHeader}>
@@ -34,99 +81,9 @@ const Content = ({ post }: { post: Post[] }) => {
         <p className={styles.postDate}>{dateToString(post.date)}</p>
       </div>
 
-      <ReactMarkdown
-        remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath]}
-        rehypePlugins={[rehypeKatex]}
-        components={{
-          h1({ node, children, ...props }) {
-            return (
-              <h1 {...props} className={styles.styledH1}>
-                {children}
-              </h1>
-            );
-          },
-          h2({ node, children, ...props }) {
-            return (
-              <h2 {...props} className={styles.styledH2}>
-                {children}
-              </h2>
-            );
-          },
-          h3({ node, children, ...props }) {
-            return (
-              <h3 {...props} className={styles.styledH3}>
-                {children}
-              </h3>
-            );
-          },
-          p({ node, children, ...props }) {
-            return (
-              <p {...props} className={styles.styledP}>
-                {children}
-              </p>
-            );
-          },
-          li({ node, children, ...props }) {
-            return (
-              <li {...props} className={styles.styledLi}>
-                {children}
-              </li>
-            );
-          },
-          ol({ node, children, ...props }) {
-            return (
-              <ol {...props} className={styles.styledOl}>
-                {children}
-              </ol>
-            );
-          },
-          ul({ node, children, ...props }) {
-            return (
-              <ul {...props} className={styles.styledUl}>
-                {children}
-              </ul>
-            );
-          },
-          a({ node, children, href, ...props }) {
-            return (
-              <a
-                href={href}
-                target="_blank"
-                {...props}
-                className={styles.styledA}
-              >
-                {children}
-              </a>
-            );
-          },
-          code({ node, inline, className, children, ...props }) {
-            const match = /language-(\w+)/.exec(className || "");
-            return inline ? (
-              <code className={styles.styledCode} {...props}>
-                {children}
-              </code>
-            ) : match ? (
-              <SyntaxHighlighter
-                children={String(children).replace(/\n$/, "")}
-                style={nord}
-                language={match[1]}
-                PreTag="div"
-                {...props}
-              />
-            ) : (
-              <SyntaxHighlighter
-                children={String(children).replace(/\n$/, "")}
-                style={nord}
-                language="textile"
-                PreTag="div"
-                {...props}
-              />
-            );
-          },
-        }}
-      >
-        {post.body.raw}
-      </ReactMarkdown>
+      <MDXProvider>
+        <MDXContent components={components} />
+      </MDXProvider>
     </div>
   );
 };

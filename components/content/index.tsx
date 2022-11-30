@@ -49,26 +49,7 @@ const Content = ({
         )}
       </div>
 
-      <div className={styles.main}>
-        {children}
-        {/* <h1 className={styles.postTitle}>content title</h1>
-        <p className={styles.postDate}>2022.11.23.</p>
-
-        <ReactMarkdown
-          remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
-          components={{
-            h1({ node, children, ...props }) {
-              return (
-                <h1 {...props} className={styles.styledH1}>
-                  {children}
-                </h1>
-              );
-            },
-          }}
-        >
-          {"ef"}
-        </ReactMarkdown> */}
-      </div>
+      <div className={styles.main}>{children}</div>
     </div>
   );
 };

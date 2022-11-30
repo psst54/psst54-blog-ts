@@ -11,11 +11,16 @@ var Post = defineDocumentType(() => ({
       required: true
     },
     date: {
-      type: "date",
+      type: "published_at",
       description: "The date of the post",
       required: true
     },
     category: {
+      type: "list",
+      of: { type: "string" },
+      required: true
+    },
+    tag: {
       type: "list",
       of: { type: "string" }
     }
@@ -46,12 +51,6 @@ var Category = defineDocumentType(() => ({
       type: "list",
       of: { type: "string" }
     }
-  },
-  computedFields: {
-    fileName: {
-      type: "string",
-      resolve: (category) => `${category._raw.flattenedPath.slice("path/".length)}`
-    }
   }
 }));
 var contentlayer_config_default = makeSource({
@@ -63,4 +62,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-SCIQATCO.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-TOUMCXXP.mjs.map

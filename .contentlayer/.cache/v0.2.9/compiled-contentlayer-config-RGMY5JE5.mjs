@@ -7,15 +7,20 @@ var Post = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
+      description: "Title of the post",
       required: true
     },
-    date: {
+    published_at: {
       type: "date",
-      description: "The date of the post",
+      description: "Published time of the post",
       required: true
     },
     category: {
+      type: "list",
+      of: { type: "string" },
+      required: true
+    },
+    tag: {
       type: "list",
       of: { type: "string" }
     }
@@ -34,23 +39,15 @@ var Category = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
       required: true
     },
     id: {
       type: "string",
-      description: "The date of the post",
       required: true
     },
     subCategory: {
       type: "list",
       of: { type: "string" }
-    }
-  },
-  computedFields: {
-    url: {
-      type: "string",
-      resolve: (category) => `/${category.id}`
     }
   }
 }));
@@ -63,4 +60,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-ICZF3DCY.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-RGMY5JE5.mjs.map

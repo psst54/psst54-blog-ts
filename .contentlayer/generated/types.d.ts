@@ -13,9 +13,7 @@ export type Category = {
   _id: string
   _raw: Local.RawDocumentData
   type: 'Category'
-  /** The title of the post */
   title: string
-  /** The date of the post */
   id: string
   subCategory?: string[] | undefined
   /** MDX file body */
@@ -28,11 +26,12 @@ export type Post = {
   _id: string
   _raw: Local.RawDocumentData
   type: 'Post'
-  /** The title of the post */
+  /** Title of the post */
   title: string
-  /** The date of the post */
-  date: IsoDateTimeString
-  category?: string[] | undefined
+  /** Published time of the post */
+  published_at: IsoDateTimeString
+  category: string[]
+  tag?: string[] | undefined
   /** MDX file body */
   body: MDX
   fileName: string

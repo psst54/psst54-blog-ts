@@ -78,7 +78,7 @@ const Content = ({ post }: { post: Post[] }) => {
     <div>
       <div className={styles.postHeader}>
         <h1 className={styles.postTitle}>{post.title}</h1>
-        <p className={styles.postDate}>{dateToString(post.date)}</p>
+        <p className={styles.postDate}>{dateToString(post.published_at)}</p>
       </div>
 
       <MDXProvider>

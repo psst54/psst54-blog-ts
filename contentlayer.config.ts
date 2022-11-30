@@ -7,15 +7,20 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
+      description: "Title of the post",
       required: true,
     },
-    date: {
+    published_at: {
       type: "date",
-      description: "The date of the post",
+      description: "Published time of the post",
       required: true,
     },
     category: {
+      type: "list",
+      of: { type: "string" },
+      required: true,
+    },
+    tag: {
       type: "list",
       of: { type: "string" },
     },
@@ -35,12 +40,10 @@ export const Category = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     id: {
       type: "string",
-      description: "The date of the post",
       required: true,
     },
     subCategory: {

@@ -39,7 +39,10 @@ const Content = ({
                         key={subCategory.title}
                       >
                         <a href={`/category/${subCategory.id}`}>
-                          {subCategory.title} ({subCategory.cnt})
+                          {subCategory.title}{" "}
+                          <span className={styles.categoryCnt}>
+                            ({subCategory.cnt})
+                          </span>
                         </a>
                       </ul>
                     )

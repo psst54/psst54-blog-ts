@@ -29,6 +29,9 @@
   padding: 0.2rem 0 0.2rem 1rem;
   font-size: 1rem;
 }
+.categoryCnt {
+  font-size: 0.8rem;
+}
 
 .postHeader {
   padding-top: 1.5rem;

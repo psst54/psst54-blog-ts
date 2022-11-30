@@ -1,0 +1,28 @@
+.postCard {
+  padding: 0.5rem 0;
+  /* border: 1px solid; */
+}
+
+.postTitle {
+  padding: 0.5rem 0 0.2rem 0;
+
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.postTitle:hover {
+  color: #f199a9;
+  transition: 0.1s;
+}
+
+.tagList {
+  display: flex;
+  gap: 5px;
+}
+.tagItem {
+  background: #f199a9;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+
+  font-weight: 600;
+  color: #ffffff;
+}

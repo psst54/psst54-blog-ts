@@ -61,6 +61,8 @@
 .styledA {
   color: #f199a9;
   text-decoration: underline;
+  padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 .styledCode {
   padding: 0.1rem 0.2rem;
@@ -73,13 +75,19 @@
   color: #fff;
 }
 .styledLi {
+  margin-left: 1rem;
   padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 .styledOl {
+  margin-left: 1rem;
   padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 .styledUl {
+  margin-left: 1rem;
   padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 .styledBox {
   background: #68c6f511;

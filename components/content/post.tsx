@@ -46,7 +46,7 @@ const Content = ({ post }: { post: Post[] }) => {
     h5: (props) => <h5 className={styles.styledH3} {...props} />,
     h6: (props) => <h6 className={styles.styledH3} {...props} />,
     p: (props) => <p className={styles.styledP} {...props} />,
-    a: (props) => <a className={styles.styledA} {...props} />,
+    a: (props) => <a target="_blank" className={styles.styledA} {...props} />,
     li: (props) => <li className={styles.styledLi} {...props} />,
     ol: (props) => <ol className={styles.styledOl} {...props} />,
     ul: (props) => <ul className={styles.styledUl} {...props} />,
@@ -81,9 +81,7 @@ const Content = ({ post }: { post: Post[] }) => {
         <p className={styles.postDate}>{dateToString(post.published_at)}</p>
       </div>
 
-      <MDXProvider>
-        <MDXContent components={components} />
-      </MDXProvider>
+      <MDXContent components={components} />
     </div>
   );
 };

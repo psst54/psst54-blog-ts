@@ -18,7 +18,7 @@ const Header = () => {
       </ul>
 
       <a href="/">
-        <h1 className={styles.title}>title</h1>
+        <h1 className={styles.title}>abs(YES)</h1>
       </a>
     </div>
   );

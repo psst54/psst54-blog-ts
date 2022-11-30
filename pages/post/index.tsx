@@ -10,6 +10,7 @@ import {
 } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { GetStaticProps } from "next";
+import PostMainPage from "@components/content/postMain";
 
 const Blog = ({
   posts,
@@ -18,6 +19,7 @@ const Blog = ({
   posts: Post[];
   categories: Category[];
 }) => {
+  console.log(posts);
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +27,11 @@ const Blog = ({
       </Head>
 
       <Header />
-      <Content posts={posts} categories={categories} />
+      <Content
+        posts={posts}
+        categories={categories}
+        children={<PostMainPage posts={posts} />}
+      />
     </div>
   );
 };

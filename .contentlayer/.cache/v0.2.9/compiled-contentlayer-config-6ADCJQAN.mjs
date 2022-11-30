@@ -7,12 +7,12 @@ var Post = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
+      description: "Title of the post",
       required: true
     },
-    date: {
-      type: "published_at",
-      description: "The date of the post",
+    published_at: {
+      type: "date",
+      description: "Published time of the post",
       required: true
     },
     category: {
@@ -39,12 +39,10 @@ var Category = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
       required: true
     },
     id: {
       type: "string",
-      description: "The date of the post",
       required: true
     },
     subCategory: {
@@ -53,13 +51,19 @@ var Category = defineDocumentType(() => ({
     }
   }
 }));
+var Main = defineDocumentType(() => ({
+  name: "Main",
+  filePathPattern: `main.mdx`,
+  contentType: "mdx"
+}));
 var contentlayer_config_default = makeSource({
   contentDirPath: "files",
-  documentTypes: [Post, Category]
+  documentTypes: [Post, Category, Main]
 });
 export {
   Category,
+  Main,
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-TOUMCXXP.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-6ADCJQAN.mjs.map

@@ -21,6 +21,16 @@ export type Category = {
 
 }
 
+export type Main = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Main'
+  /** MDX file body */
+  body: MDX
+
+}
+
 export type Post = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -45,8 +55,8 @@ export type Post = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Category | Post
-export type DocumentTypeNames = 'Category' | 'Post'
+export type DocumentTypes = Category | Main | Post
+export type DocumentTypeNames = 'Category' | 'Main' | 'Post'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -68,6 +78,7 @@ declare global {
 
 export type DocumentTypeMap = {
   Category: Category
+  Main: Main
   Post: Post
 }
 

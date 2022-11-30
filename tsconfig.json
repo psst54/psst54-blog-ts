@@ -18,7 +18,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
-      "@posts/*": ["posts/*"],
+      "@files/*": ["files/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },

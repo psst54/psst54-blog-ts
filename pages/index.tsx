@@ -5,18 +5,23 @@ import styles from "@styles/home.module.css";
 import {
   allPosts,
   allCategories,
+  allMains,
   type Post,
   type Category,
+  type Main,
 } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { GetStaticProps } from "next";
+import MainPage from "@components/content/main.tsx";
 
 export default function Home({
   posts,
   categories,
+  mainPost,
 }: {
   posts: Post[];
   categories: Category[];
+  mainPost: Main[];
 }) {
   return (
     <div className={styles.container}>
@@ -31,7 +36,11 @@ export default function Home({
       </Head>
 
       <Header />
-      <Content posts={posts} categories={categories} />
+      <Content
+        posts={posts}
+        categories={categories}
+        children={<MainPage mainPost={mainPost} />}
+      />
     </div>
   );
 }
@@ -41,6 +50,7 @@ export const getStaticProps: GetStaticProps = async () => {
     compareDesc(new Date(a.published_at), new Date(b.published_at))
   );
   const categories: Category[] = allCategories;
+  const mainPost: Main[] = allMains[0];
 
-  return { props: { posts, categories } };
+  return { props: { posts, categories, mainPost } };
 };

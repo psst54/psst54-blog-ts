@@ -1,0 +1,17 @@
+[
+  {
+    "body": {
+      "raw": "# ✨ Hello world!\r\n\r\n##\r\n",
+      "code": "var Component=(()=>{var x=Object.create;var r=Object.defineProperty;var j=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,_=Object.prototype.hasOwnProperty;var d=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports),f=(n,t)=>{for(var s in t)r(n,s,{get:t[s],enumerable:!0})},a=(n,t,s,c)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let o of l(t))!_.call(n,o)&&o!==s&&r(n,o,{get:()=>t[o],enumerable:!(c=j(t,o))||c.enumerable});return n};var g=(n,t,s)=>(s=n!=null?x(u(n)):{},a(t||!n||!n.__esModule?r(s,\"default\",{value:n,enumerable:!0}):s,n)),M=n=>a(r({},\"__esModule\",{value:!0}),n);var i=d((D,h)=>{h.exports=_jsx_runtime});var w={};f(w,{default:()=>p});var e=g(i());function m(n){let t=Object.assign({h1:\"h1\",h2:\"h2\"},n.components);return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(t.h1,{children:\"\\u2728 Hello world!\"}),`\n`,(0,e.jsx)(t.h2,{})]})}function b(n={}){let{wrapper:t}=n.components||{};return t?(0,e.jsx)(t,Object.assign({},n,{children:(0,e.jsx)(m,n)})):m(n)}var p=b;return M(w);})();\n;return Component;"
+    },
+    "_id": "main.mdx",
+    "_raw": {
+      "sourceFilePath": "main.mdx",
+      "sourceFileName": "main.mdx",
+      "sourceFileDir": ".",
+      "contentType": "mdx",
+      "flattenedPath": "main"
+    },
+    "type": "Main"
+  }
+]

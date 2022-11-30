@@ -53,7 +53,13 @@ export const Category = defineDocumentType(() => ({
   },
 }));
 
+export const Main = defineDocumentType(() => ({
+  name: "Main",
+  filePathPattern: `main.mdx`,
+  contentType: "mdx",
+}));
+
 export default makeSource({
   contentDirPath: "files",
-  documentTypes: [Post, Category],
+  documentTypes: [Post, Category, Main],
 });

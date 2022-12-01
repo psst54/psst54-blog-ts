@@ -18,8 +18,11 @@ const Blog = ({
   posts: Post[];
   categories: Category[];
 }) => {
-  console.log(categories);
-  console.log(allCategories.map((category) => "/" + category.url));
+  console.log(
+    allCategories.sort((a: Category, b: Category) =>
+      a.index < b.index ? -1 : 1
+    )
+  );
 
   return (
     <div className={styles.container}>
@@ -37,7 +40,9 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
     compareDesc(new Date(a.published_at), new Date(b.published_at))
   );
-  const categories: Category[] = allCategories;
+  const categories: Category[] = allCategories.sort(
+    (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
+  );
 
   return { props: { posts, categories } };
 };

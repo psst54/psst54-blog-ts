@@ -37,6 +37,10 @@
   font-weight: 900;
   display: relative;
 }
+.menuTitle:hover {
+  color: #68c6f5;
+  transition: 0.1s;
+}
 .highlight {
   display: inline-block;
   position: relative;

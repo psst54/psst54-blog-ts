@@ -15,6 +15,7 @@ export type Category = {
   type: 'Category'
   title: string
   id: string
+  index: number
   subCategory?: string[] | undefined
   /** MDX file body */
   body: MDX

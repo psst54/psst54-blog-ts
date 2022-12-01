@@ -2,5 +2,6 @@
 
 import post__boj12865__indexMdx from './post__boj12865__index.mdx.json' assert { type: 'json' }
 import post__boj7579__indexMdx from './post__boj7579__index.mdx.json' assert { type: 'json' }
+import post__firstPost__indexMdx from './post__firstPost__index.mdx.json' assert { type: 'json' }
 
-export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx]
+export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx, post__firstPost__indexMdx]

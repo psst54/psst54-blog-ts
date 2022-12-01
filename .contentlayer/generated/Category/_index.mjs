@@ -3,7 +3,8 @@
 import category__2022_2__computerVisionMdx from './category__2022-2__Computer-Vision.mdx.json' assert { type: 'json' }
 import category__2022_2__indexMdx from './category__2022-2__index.mdx.json' assert { type: 'json' }
 import category__2022_2__introductionToPhilosophyMdx from './category__2022-2__Introduction-to-Philosophy.mdx.json' assert { type: 'json' }
+import category__about__indexMdx from './category__about__index.mdx.json' assert { type: 'json' }
 import category__ps__bojMdx from './category__PS__BOJ.mdx.json' assert { type: 'json' }
 import category__ps__indexMdx from './category__PS__index.mdx.json' assert { type: 'json' }
 
-export const allCategories = [category__2022_2__computerVisionMdx, category__2022_2__indexMdx, category__2022_2__introductionToPhilosophyMdx, category__ps__bojMdx, category__ps__indexMdx]
+export const allCategories = [category__2022_2__computerVisionMdx, category__2022_2__indexMdx, category__2022_2__introductionToPhilosophyMdx, category__about__indexMdx, category__ps__bojMdx, category__ps__indexMdx]

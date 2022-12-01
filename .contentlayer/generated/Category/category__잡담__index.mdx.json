@@ -1,0 +1,18 @@
+{
+  "title": "???",
+  "id": "about\"",
+  "subCategory": [],
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var _=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of _(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=f(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?x(d(t)):{},u(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),p=t=>u(a({},\"__esModule\",{value:!0}),t);var i=j((X,c)=>{c.exports=_jsx_runtime});var D={};b(D,{default:()=>y,frontmatter:()=>C});var r=l(i()),C={title:\"???\",id:'about\"',subCategory:[]};function m(t){return(0,r.jsx)(r.Fragment,{})}function M(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var y=M;return p(D);})();\n;return Component;"
+  },
+  "_id": "category/잡담/index.mdx",
+  "_raw": {
+    "sourceFilePath": "category/잡담/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "category/잡담",
+    "contentType": "mdx",
+    "flattenedPath": "category/잡담"
+  },
+  "type": "Category"
+}

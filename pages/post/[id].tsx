@@ -48,7 +48,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
     compareDesc(new Date(a.published_at), new Date(b.published_at))
   );
-  const categories: Category[] = allCategories;
+  const categories: Category[] = allCategories.sort(
+    (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
+  );
+
   const currentPost: Post | undefined = allPosts.find(
     (post) => post?.fileName === params?.id
   );

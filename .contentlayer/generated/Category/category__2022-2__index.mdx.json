@@ -1,13 +1,14 @@
 {
   "title": "2022-2",
   "id": "2022-2",
+  "index": 2,
   "subCategory": [
     "철학개론",
     "컴퓨터비전"
   ],
   "body": {
-    "raw": "\r\newfwfe\r\n",
-    "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)r(t,e,{get:n[e],enumerable:!0})},i=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!j.call(t,o)&&o!==e&&r(t,o,{get:()=>n[o],enumerable:!(s=x(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?m(d(t)):{},i(n||!t||!t.__esModule?r(e,\"default\",{value:t,enumerable:!0}):e,t)),g=t=>i(r({},\"__esModule\",{value:!0}),t);var u=_((D,a)=>{a.exports=_jsx_runtime});var h={};l(h,{default:()=>M,frontmatter:()=>w});var c=b(u()),w={title:\"2022-2\",id:\"2022-2\",subCategory:[\"\\uCCA0\\uD559\\uAC1C\\uB860\",\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"]};function f(t){let n=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(n.p,{children:\"ewfwfe\"})}function C(t={}){let{wrapper:n}=t.components||{};return n?(0,c.jsx)(n,Object.assign({},t,{children:(0,c.jsx)(f,t)})):f(t)}var M=C;return g(h);})();\n;return Component;"
+    "raw": "",
+    "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var u=j((X,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(u()),M={title:\"2022-2\",id:\"2022-2\",subCategory:[\"\\uCCA0\\uD559\\uAC1C\\uB860\",\"\\uCEF4\\uD4E8\\uD130\\uBE44\\uC804\"],index:2};function x(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=b;return C(D);})();\n;return Component;"
   },
   "_id": "category/2022-2/index.mdx",
   "_raw": {

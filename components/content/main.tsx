@@ -13,9 +13,7 @@ const Highlight = ({ children, ...props }) => {
   return <span className={styles.styledHighlight}>{children}</span>;
 };
 
-const MainPage = ({ mainPost }: { mainPost: Main[] }) => {
-  console.log(mainPost);
-
+const MainPage = ({ mainPost }: { mainPost: Main }) => {
   const components = {
     h1: (props) => <h1 className={styles.styledH1} {...props} />,
     h2: (props) => <h2 className={styles.styledH2} {...props} />,

@@ -18,12 +18,6 @@ const Blog = ({
   posts: Post[];
   categories: Category[];
 }) => {
-  console.log(
-    allCategories.sort((a: Category, b: Category) =>
-      a.index < b.index ? -1 : 1
-    )
-  );
-
   return (
     <div className={styles.container}>
       <Head>

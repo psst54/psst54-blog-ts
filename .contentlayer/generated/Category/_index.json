@@ -58,25 +58,6 @@
     "type": "Category"
   },
   {
-    "title": "???",
-    "id": "about",
-    "index": 0,
-    "subCategory": [],
-    "body": {
-      "raw": "",
-      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),p=t=>i(a({},\"__esModule\",{value:!0}),t);var c=j((X,u)=>{u.exports=_jsx_runtime});var D={};b(D,{default:()=>y,frontmatter:()=>C});var r=l(c()),C={title:\"???\",id:\"about\",subCategory:[],index:0};function x(t){return(0,r.jsx)(r.Fragment,{})}function M(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=M;return p(D);})();\n;return Component;"
-    },
-    "_id": "category/about/index.mdx",
-    "_raw": {
-      "sourceFilePath": "category/about/index.mdx",
-      "sourceFileName": "index.mdx",
-      "sourceFileDir": "category/about",
-      "contentType": "mdx",
-      "flattenedPath": "category/about"
-    },
-    "type": "Category"
-  },
-  {
     "title": "BOJ",
     "id": "BOJ",
     "index": 0,
@@ -112,6 +93,64 @@
       "sourceFileDir": "category/PS",
       "contentType": "mdx",
       "flattenedPath": "category/PS"
+    },
+    "type": "Category"
+  },
+  {
+    "title": "에필로그",
+    "id": "Epilogue",
+    "index": 1,
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(i=d(e,o))||i.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var u=j((h,c)=>{c.exports=_jsx_runtime});var X={};l(X,{default:()=>F,frontmatter:()=>C});var r=p(u()),C={title:\"\\uC5D0\\uD544\\uB85C\\uADF8\",id:\"Epilogue\",index:1};function x(t){return(0,r.jsx)(r.Fragment,{})}function D(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var F=D;return M(X);})();\n;return Component;"
+    },
+    "_id": "category/text/Epilogue.mdx",
+    "_raw": {
+      "sourceFilePath": "category/text/Epilogue.mdx",
+      "sourceFileName": "Epilogue.mdx",
+      "sourceFileDir": "category/text",
+      "contentType": "mdx",
+      "flattenedPath": "category/text/Epilogue"
+    },
+    "type": "Category"
+  },
+  {
+    "title": "이야기",
+    "id": "text",
+    "index": 0,
+    "subCategory": [
+      "프롤로그",
+      "에필로그"
+    ],
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var c=j((X,x)=>{x.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(c()),M={title:\"\\uC774\\uC57C\\uAE30\",id:\"text\",subCategory:[\"\\uD504\\uB864\\uB85C\\uADF8\",\"\\uC5D0\\uD544\\uB85C\\uADF8\"],index:0};function u(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(u,t)})):u(t)}var y=b;return C(D);})();\n;return Component;"
+    },
+    "_id": "category/text/index.mdx",
+    "_raw": {
+      "sourceFilePath": "category/text/index.mdx",
+      "sourceFileName": "index.mdx",
+      "sourceFileDir": "category/text",
+      "contentType": "mdx",
+      "flattenedPath": "category/text"
+    },
+    "type": "Category"
+  },
+  {
+    "title": "프롤로그",
+    "id": "Prologue",
+    "index": 0,
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(i=d(e,o))||i.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var u=j((h,c)=>{c.exports=_jsx_runtime});var X={};l(X,{default:()=>F,frontmatter:()=>C});var r=p(u()),C={title:\"\\uD504\\uB864\\uB85C\\uADF8\",id:\"Prologue\",index:0};function x(t){return(0,r.jsx)(r.Fragment,{})}function D(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var F=D;return M(X);})();\n;return Component;"
+    },
+    "_id": "category/text/Prologue.mdx",
+    "_raw": {
+      "sourceFilePath": "category/text/Prologue.mdx",
+      "sourceFileName": "Prologue.mdx",
+      "sourceFileDir": "category/text",
+      "contentType": "mdx",
+      "flattenedPath": "category/text/Prologue"
     },
     "type": "Category"
   }

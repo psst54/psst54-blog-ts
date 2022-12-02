@@ -1,15 +1,18 @@
 .container {
+  width: 100vw;
   min-height: 100vh;
   /* background: #e7e4eb; */
   background: #eceaf0;
 
-  padding: 6vw 6vw;
+  padding: 3vw 3vw;
 }
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
+
   /* background: #68c6f5; */
   /* background: #f199a9; */
   margin-top: 1rem;

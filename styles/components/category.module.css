@@ -3,15 +3,20 @@
   /* border: 1px solid; */
 }
 
+.postText:hover {
+  color: #f199a9;
+  transition: 0.1s;
+}
+
 .postTitle {
   padding: 0.5rem 0 0.2rem 0;
 
   font-weight: 600;
   font-size: 1.4rem;
 }
-.postTitle:hover {
-  color: #f199a9;
-  transition: 0.1s;
+
+.postSummary {
+  padding: 0.2rem 0 0.5rem 0;
 }
 
 .tagList {

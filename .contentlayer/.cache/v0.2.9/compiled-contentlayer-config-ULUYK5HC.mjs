@@ -23,6 +23,9 @@ var Post = defineDocumentType(() => ({
     tag: {
       type: "list",
       of: { type: "string" }
+    },
+    summary: {
+      type: "string"
     }
   },
   computedFields: {
@@ -43,6 +46,10 @@ var Category = defineDocumentType(() => ({
     },
     id: {
       type: "string",
+      required: true
+    },
+    index: {
+      type: "number",
       required: true
     },
     subCategory: {
@@ -66,4 +73,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-6ADCJQAN.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-ULUYK5HC.mjs.map

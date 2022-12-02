@@ -24,6 +24,9 @@ export const Post = defineDocumentType(() => ({
       type: "list",
       of: { type: "string" },
     },
+    summary: {
+      type: "string",
+    },
   },
   computedFields: {
     fileName: {

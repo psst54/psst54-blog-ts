@@ -1,0 +1,25 @@
+{
+  "title": "12월 시작하기",
+  "published_at": "2022-12-02T00:00:00.000Z",
+  "category": [
+    "text",
+    "프롤로그"
+  ],
+  "tag": [
+    "일기"
+  ],
+  "body": {
+    "raw": "\r\n와 머했다고 벌써 12월\r\n",
+    "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var _=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var l=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!f.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(c=_(e,o))||c.enumerable});return t};var g=(t,e,n)=>(n=t!=null?x(p(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),D=t=>s(a({},\"__esModule\",{value:!0}),t);var m=l((C,i)=>{i.exports=_jsx_runtime});var M={};j(M,{default:()=>w,frontmatter:()=>b});var r=g(m()),b={title:\"12\\uC6D4 \\uC2DC\\uC791\\uD558\\uAE30\",category:[\"text\",\"\\uD504\\uB864\\uB85C\\uADF8\"],tag:[\"\\uC77C\\uAE30\"],published_at:new Date(16699392e5),last_modified_at:new Date(16699392e5)};function u(t){let e=Object.assign({p:\"p\"},t.components);return(0,r.jsx)(e.p,{children:\"\\uC640 \\uBA38\\uD588\\uB2E4\\uACE0 \\uBC8C\\uC368 12\\uC6D4\"})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(u,t)})):u(t)}var w=h;return D(M);})();\n;return Component;"
+  },
+  "_id": "post/twentyTwoDecPrologue/index.mdx",
+  "_raw": {
+    "sourceFilePath": "post/twentyTwoDecPrologue/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "post/twentyTwoDecPrologue",
+    "contentType": "mdx",
+    "flattenedPath": "post/twentyTwoDecPrologue"
+  },
+  "type": "Post",
+  "fileName": "twentyTwoDecPrologue"
+}

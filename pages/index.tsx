@@ -21,7 +21,7 @@ export default function Home({
 }: {
   posts: Post[];
   categories: Category[];
-  mainPost: Main[];
+  mainPost: Main;
 }) {
   return (
     <div className={styles.container}>
@@ -52,7 +52,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const categories: Category[] = allCategories.sort(
     (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
   );
-  const mainPost: Main[] = allMains[0];
+  const mainPost: Main = allMains[0];
 
   return { props: { posts, categories, mainPost } };
 };

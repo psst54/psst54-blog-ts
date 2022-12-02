@@ -1,0 +1,18 @@
+{
+  "title": "프롤로그",
+  "id": "Prologue",
+  "index": 0,
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(i=d(e,o))||i.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var u=j((h,c)=>{c.exports=_jsx_runtime});var X={};l(X,{default:()=>F,frontmatter:()=>C});var r=p(u()),C={title:\"\\uD504\\uB864\\uB85C\\uADF8\",id:\"Prologue\",index:0};function x(t){return(0,r.jsx)(r.Fragment,{})}function D(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var F=D;return M(X);})();\n;return Component;"
+  },
+  "_id": "category/text/Prologue.mdx",
+  "_raw": {
+    "sourceFilePath": "category/text/Prologue.mdx",
+    "sourceFileName": "Prologue.mdx",
+    "sourceFileDir": "category/text",
+    "contentType": "mdx",
+    "flattenedPath": "category/text/Prologue"
+  },
+  "type": "Category"
+}

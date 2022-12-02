@@ -43,6 +43,7 @@ export type Post = {
   published_at: IsoDateTimeString
   category: string[]
   tag?: string[] | undefined
+  summary?: string | undefined
   /** MDX file body */
   body: MDX
   fileName: string

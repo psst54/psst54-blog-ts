@@ -1,0 +1,21 @@
+{
+  "title": "공부한거",
+  "id": "study",
+  "index": 3,
+  "subCategory": [
+    "LearnOpenGL"
+  ],
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),p=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),y=t=>i(a({},\"__esModule\",{value:!0}),t);var c=j((F,u)=>{u.exports=_jsx_runtime});var b={};p(b,{default:()=>M,frontmatter:()=>C});var r=l(c()),C={title:\"\\uACF5\\uBD80\\uD55C\\uAC70\",id:\"study\",subCategory:[\"LearnOpenGL\"],index:3};function x(t){return(0,r.jsx)(r.Fragment,{})}function L(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var M=L;return y(b);})();\n;return Component;"
+  },
+  "_id": "category/study/index.mdx",
+  "_raw": {
+    "sourceFilePath": "category/study/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "category/study",
+    "contentType": "mdx",
+    "flattenedPath": "category/study"
+  },
+  "type": "Category"
+}

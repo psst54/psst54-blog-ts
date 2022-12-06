@@ -1,0 +1,18 @@
+{
+  "title": "철학개론",
+  "id": "IntroductionToPhilosophy",
+  "index": 0,
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var m=Object.create;var i=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var l=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),p=(t,n)=>{for(var e in n)i(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,a)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let r of f(n))!j.call(t,r)&&r!==e&&i(t,r,{get:()=>n[r],enumerable:!(a=d(n,r))||a.enumerable});return t};var g=(t,n,e)=>(e=t!=null?m(_(t)):{},s(n||!t||!t.__esModule?i(e,\"default\",{value:t,enumerable:!0}):e,t)),h=t=>s(i({},\"__esModule\",{value:!0}),t);var u=l((X,c)=>{c.exports=_jsx_runtime});var D={};p(D,{default:()=>C,frontmatter:()=>M});var o=g(u()),M={title:\"\\uCCA0\\uD559\\uAC1C\\uB860\",id:\"IntroductionToPhilosophy\",index:0};function x(t){return(0,o.jsx)(o.Fragment,{})}function y(t={}){let{wrapper:n}=t.components||{};return n?(0,o.jsx)(n,Object.assign({},t,{children:(0,o.jsx)(x,t)})):x(t)}var C=y;return h(D);})();\n;return Component;"
+  },
+  "_id": "category/2022-2/IntroductionToPhilosophy.mdx",
+  "_raw": {
+    "sourceFilePath": "category/2022-2/IntroductionToPhilosophy.mdx",
+    "sourceFileName": "IntroductionToPhilosophy.mdx",
+    "sourceFileDir": "category/2022-2",
+    "contentType": "mdx",
+    "flattenedPath": "category/2022-2/IntroductionToPhilosophy"
+  },
+  "type": "Category"
+}

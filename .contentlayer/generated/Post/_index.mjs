@@ -3,6 +3,8 @@
 import post__boj12865__indexMdx from './post__boj12865__index.mdx.json' assert { type: 'json' }
 import post__boj7579__indexMdx from './post__boj7579__index.mdx.json' assert { type: 'json' }
 import post__firstPost__indexMdx from './post__firstPost__index.mdx.json' assert { type: 'json' }
+import post__learnOpenGlTextures__indexMdx from './post__LearnOpenGLTextures__index.mdx.json' assert { type: 'json' }
 import post__twentyTwoDecPrologue__indexMdx from './post__twentyTwoDecPrologue__index.mdx.json' assert { type: 'json' }
+import post__introToPhil1027__indexMdx from './post__introToPhil1027__index.mdx.json' assert { type: 'json' }
 
-export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx, post__firstPost__indexMdx, post__twentyTwoDecPrologue__indexMdx]
+export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx, post__firstPost__indexMdx, post__learnOpenGlTextures__indexMdx, post__twentyTwoDecPrologue__indexMdx, post__introToPhil1027__indexMdx]

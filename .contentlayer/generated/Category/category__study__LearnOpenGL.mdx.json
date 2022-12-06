@@ -1,0 +1,18 @@
+{
+  "title": "LearnOpenGL",
+  "id": "LearnOpenGL",
+  "index": 0,
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,L=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!L.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var g=(t,n,e)=>(e=t!=null?u(p(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),l=t=>s(a({},\"__esModule\",{value:!0}),t);var x=_((G,c)=>{c.exports=_jsx_runtime});var D={};j(D,{default:()=>C,frontmatter:()=>M});var r=g(x()),M={title:\"LearnOpenGL\",id:\"LearnOpenGL\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function O(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=O;return l(D);})();\n;return Component;"
+  },
+  "_id": "category/study/LearnOpenGL.mdx",
+  "_raw": {
+    "sourceFilePath": "category/study/LearnOpenGL.mdx",
+    "sourceFileName": "LearnOpenGL.mdx",
+    "sourceFileDir": "category/study",
+    "contentType": "mdx",
+    "flattenedPath": "category/study/LearnOpenGL"
+  },
+  "type": "Category"
+}

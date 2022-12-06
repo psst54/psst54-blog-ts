@@ -14,6 +14,8 @@ import { redirect } from "next/dist/server/api-utils";
 import { MDXProvider } from "@mdx-js/react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
+import Image from "next/image";
+
 const Aside = ({ children, ...props }) => {
   return <div className={styles.styledBox}>{children}</div>;
 };
@@ -51,6 +53,13 @@ const Content = ({ post }: { post: Post[] }) => {
     ol: (props) => <ol className={styles.styledOl} {...props} />,
     ul: (props) => <ul className={styles.styledUl} {...props} />,
     pre: (props) => <pre style={{ overflow: "auto" }} {...props} />,
+    img: (props) => (
+      <img
+        src={props.src}
+        alt={props.alt}
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
+    ),
     code: ({ className, children, ...props }) => {
       const match = /language-(\w+)/.exec(className || "");
 

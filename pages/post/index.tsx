@@ -22,7 +22,7 @@ const Blog = ({
   return (
     <div className={styles.container}>
       <Head>
-        <title>abs(YES) | posts</title>
+        <title>abs(YES) | post</title>
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"

@@ -1,10 +1,16 @@
+.fullScreen {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .container {
   width: 100%;
+  /* max-width: 1320px; */
   min-height: 100vh;
   /* background: #e7e4eb; */
   background: #eceaf0;
 
-  padding: 3vw 3vw;
+  padding: 3% 3%;
 }
 
 .header {

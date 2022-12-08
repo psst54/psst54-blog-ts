@@ -24,7 +24,7 @@ const Post = ({
   return (
     <div className={styles.container}>
       <Head>
-        <title>abs(YES) | post</title>
+        <title>abs(YES) | {currentPost.title}</title>
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"

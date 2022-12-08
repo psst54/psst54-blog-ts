@@ -26,6 +26,9 @@ const MainPage = ({ mainPost }: { mainPost: Main }) => {
     li: (props) => <li className={styles.styledLi} {...props} />,
     ol: (props) => <ol className={styles.styledOl} {...props} />,
     ul: (props) => <ul className={styles.styledUl} {...props} />,
+    blockquote: (props) => (
+      <blockquote className={styles.styledBlockquote} {...props} />
+    ),
     pre: (props) => <pre style={{ overflow: "auto" }} {...props} />,
     code: ({ className, children, ...props }) => {
       const match = /language-(\w+)/.exec(className || "");

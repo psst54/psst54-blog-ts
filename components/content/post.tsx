@@ -52,6 +52,9 @@ const Content = ({ post }: { post: Post[] }) => {
     li: (props) => <li className={styles.styledLi} {...props} />,
     ol: (props) => <ol className={styles.styledOl} {...props} />,
     ul: (props) => <ul className={styles.styledUl} {...props} />,
+    blockquote: (props) => (
+      <blockquote className={styles.styledBlockquote} {...props} />
+    ),
     pre: (props) => <pre style={{ overflow: "auto" }} {...props} />,
     img: (props) => (
       <img

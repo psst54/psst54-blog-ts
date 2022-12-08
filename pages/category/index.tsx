@@ -21,7 +21,7 @@ const Blog = ({
   return (
     <div className={styles.container}>
       <Head>
-        <title>abs(YES) | posts</title>
+        <title>abs(YES) | category</title>
       </Head>
 
       <Header />

@@ -24,7 +24,7 @@ export default function Home({
   mainPost: Main;
 }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES)</title>
         <meta name="description" content="hi" />
@@ -35,12 +35,14 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Content
-        posts={posts}
-        categories={categories}
-        children={<MainPage mainPost={mainPost} />}
-      />
+      <div className={styles.container}>
+        <Header />
+        <Content
+          posts={posts}
+          categories={categories}
+          children={<MainPage mainPost={mainPost} />}
+        />
+      </div>
     </div>
   );
 }

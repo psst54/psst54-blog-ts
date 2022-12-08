@@ -1,44 +1,5 @@
 [
   {
-    "title": "BOJ",
-    "id": "BOJ",
-    "index": 0,
-    "body": {
-      "raw": "",
-      "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var g=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!j.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var p=(t,n,e)=>(e=t!=null?u(_(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var x=g((J,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>C,frontmatter:()=>O});var r=p(x()),O={title:\"BOJ\",id:\"BOJ\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function B(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=B;return M(D);})();\n;return Component;"
-    },
-    "_id": "category/PS/BOJ.mdx",
-    "_raw": {
-      "sourceFilePath": "category/PS/BOJ.mdx",
-      "sourceFileName": "BOJ.mdx",
-      "sourceFileDir": "category/PS",
-      "contentType": "mdx",
-      "flattenedPath": "category/PS/BOJ"
-    },
-    "type": "Category"
-  },
-  {
-    "title": "PS",
-    "id": "PS",
-    "index": 1,
-    "subCategory": [
-      "BOJ"
-    ],
-    "body": {
-      "raw": "",
-      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var u=j((O,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(u()),M={title:\"PS\",id:\"PS\",subCategory:[\"BOJ\"],index:1};function x(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=b;return C(D);})();\n;return Component;"
-    },
-    "_id": "category/PS/index.mdx",
-    "_raw": {
-      "sourceFilePath": "category/PS/index.mdx",
-      "sourceFileName": "index.mdx",
-      "sourceFileDir": "category/PS",
-      "contentType": "mdx",
-      "flattenedPath": "category/PS"
-    },
-    "type": "Category"
-  },
-  {
     "title": "컴퓨터비전",
     "id": "ComputerVision",
     "index": 1,
@@ -93,6 +54,45 @@
       "sourceFileDir": "category/2022-2",
       "contentType": "mdx",
       "flattenedPath": "category/2022-2/IntroductionToPhilosophy"
+    },
+    "type": "Category"
+  },
+  {
+    "title": "공부한거",
+    "id": "study",
+    "index": 3,
+    "subCategory": [
+      "LearnOpenGL"
+    ],
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),p=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),y=t=>i(a({},\"__esModule\",{value:!0}),t);var c=j((F,u)=>{u.exports=_jsx_runtime});var b={};p(b,{default:()=>M,frontmatter:()=>C});var r=l(c()),C={title:\"\\uACF5\\uBD80\\uD55C\\uAC70\",id:\"study\",subCategory:[\"LearnOpenGL\"],index:3};function x(t){return(0,r.jsx)(r.Fragment,{})}function L(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var M=L;return y(b);})();\n;return Component;"
+    },
+    "_id": "category/study/index.mdx",
+    "_raw": {
+      "sourceFilePath": "category/study/index.mdx",
+      "sourceFileName": "index.mdx",
+      "sourceFileDir": "category/study",
+      "contentType": "mdx",
+      "flattenedPath": "category/study"
+    },
+    "type": "Category"
+  },
+  {
+    "title": "LearnOpenGL",
+    "id": "LearnOpenGL",
+    "index": 0,
+    "body": {
+      "raw": "",
+      "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,L=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!L.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var g=(t,n,e)=>(e=t!=null?u(p(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),l=t=>s(a({},\"__esModule\",{value:!0}),t);var x=_((G,c)=>{c.exports=_jsx_runtime});var D={};j(D,{default:()=>C,frontmatter:()=>M});var r=g(x()),M={title:\"LearnOpenGL\",id:\"LearnOpenGL\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function O(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=O;return l(D);})();\n;return Component;"
+    },
+    "_id": "category/study/LearnOpenGL.mdx",
+    "_raw": {
+      "sourceFilePath": "category/study/LearnOpenGL.mdx",
+      "sourceFileName": "LearnOpenGL.mdx",
+      "sourceFileDir": "category/study",
+      "contentType": "mdx",
+      "flattenedPath": "category/study/LearnOpenGL"
     },
     "type": "Category"
   },
@@ -155,41 +155,41 @@
     "type": "Category"
   },
   {
-    "title": "공부한거",
-    "id": "study",
-    "index": 3,
-    "subCategory": [
-      "LearnOpenGL"
-    ],
+    "title": "BOJ",
+    "id": "BOJ",
+    "index": 0,
     "body": {
       "raw": "",
-      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),p=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var l=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),y=t=>i(a({},\"__esModule\",{value:!0}),t);var c=j((F,u)=>{u.exports=_jsx_runtime});var b={};p(b,{default:()=>M,frontmatter:()=>C});var r=l(c()),C={title:\"\\uACF5\\uBD80\\uD55C\\uAC70\",id:\"study\",subCategory:[\"LearnOpenGL\"],index:3};function x(t){return(0,r.jsx)(r.Fragment,{})}function L(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var M=L;return y(b);})();\n;return Component;"
+      "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var g=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!j.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var p=(t,n,e)=>(e=t!=null?u(_(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var x=g((J,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>C,frontmatter:()=>O});var r=p(x()),O={title:\"BOJ\",id:\"BOJ\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function B(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=B;return M(D);})();\n;return Component;"
     },
-    "_id": "category/study/index.mdx",
+    "_id": "category/PS/BOJ.mdx",
     "_raw": {
-      "sourceFilePath": "category/study/index.mdx",
-      "sourceFileName": "index.mdx",
-      "sourceFileDir": "category/study",
+      "sourceFilePath": "category/PS/BOJ.mdx",
+      "sourceFileName": "BOJ.mdx",
+      "sourceFileDir": "category/PS",
       "contentType": "mdx",
-      "flattenedPath": "category/study"
+      "flattenedPath": "category/PS/BOJ"
     },
     "type": "Category"
   },
   {
-    "title": "LearnOpenGL",
-    "id": "LearnOpenGL",
-    "index": 0,
+    "title": "PS",
+    "id": "PS",
+    "index": 1,
+    "subCategory": [
+      "BOJ"
+    ],
     "body": {
       "raw": "",
-      "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,L=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),j=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!L.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var g=(t,n,e)=>(e=t!=null?u(p(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),l=t=>s(a({},\"__esModule\",{value:!0}),t);var x=_((G,c)=>{c.exports=_jsx_runtime});var D={};j(D,{default:()=>C,frontmatter:()=>M});var r=g(x()),M={title:\"LearnOpenGL\",id:\"LearnOpenGL\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function O(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=O;return l(D);})();\n;return Component;"
+      "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var u=j((O,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(u()),M={title:\"PS\",id:\"PS\",subCategory:[\"BOJ\"],index:1};function x(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=b;return C(D);})();\n;return Component;"
     },
-    "_id": "category/study/LearnOpenGL.mdx",
+    "_id": "category/PS/index.mdx",
     "_raw": {
-      "sourceFilePath": "category/study/LearnOpenGL.mdx",
-      "sourceFileName": "LearnOpenGL.mdx",
-      "sourceFileDir": "category/study",
+      "sourceFilePath": "category/PS/index.mdx",
+      "sourceFileName": "index.mdx",
+      "sourceFileDir": "category/PS",
       "contentType": "mdx",
-      "flattenedPath": "category/study/LearnOpenGL"
+      "flattenedPath": "category/PS"
     },
     "type": "Category"
   }

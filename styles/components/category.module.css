@@ -1,6 +1,9 @@
 .postCard {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   /* border: 1px solid; */
+}
+.postCard:first-child {
+  padding: 0 0 0.8rem 0;
 }
 
 .postText:hover {

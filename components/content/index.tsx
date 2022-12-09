@@ -19,40 +19,46 @@ const Content = ({
 
   return (
     <div className={styles.container}>
-      <div className={styles.sidebar}>
-        {categories.map(
-          (category) =>
-            category.subCategory && (
-              <div key={category.title}>
-                <ul className={styles.categoryName}>
-                  <a href={`/category/${category.id}`}>
-                    {category.title}{" "}
-                    <span className={styles.categoryCnt}>({category.cnt})</span>
-                  </a>
-                </ul>
+      <div className={styles.sideContents}>
+        <div className={styles.sidebar}>
+          {categories.map(
+            (category) =>
+              category.subCategory && (
+                <div key={category.title}>
+                  <ul className={styles.categoryName}>
+                    <a href={`/category/${category.id}`}>
+                      {category.title}{" "}
+                      <span className={styles.categoryCnt}>
+                        ({category.cnt})
+                      </span>
+                    </a>
+                  </ul>
 
-                {categories.map(
-                  (subCategory) =>
-                    category.subCategory.includes(subCategory.id) && (
-                      <ul
-                        className={styles.subCategoryName}
-                        key={subCategory.id}
-                      >
-                        <a href={`/category/${subCategory.id}`}>
-                          {subCategory.title}{" "}
-                          <span className={styles.categoryCnt}>
-                            ({subCategory.cnt})
-                          </span>
-                        </a>
-                      </ul>
-                    )
-                )}
-              </div>
-            )
-        )}
+                  {categories.map(
+                    (subCategory) =>
+                      category.subCategory.includes(subCategory.id) && (
+                        <ul
+                          className={styles.subCategoryName}
+                          key={subCategory.id}
+                        >
+                          <a href={`/category/${subCategory.id}`}>
+                            {subCategory.title}{" "}
+                            <span className={styles.categoryCnt}>
+                              ({subCategory.cnt})
+                            </span>
+                          </a>
+                        </ul>
+                      )
+                  )}
+                </div>
+              )
+          )}
+        </div>
       </div>
 
-      <div className={styles.main}>{children}</div>
+      <div className={styles.mainContents}>
+        <div className={styles.main}>{children}</div>
+      </div>
     </div>
   );
 };

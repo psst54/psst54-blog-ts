@@ -4,30 +4,40 @@
   width: 100%;
 }
 
-.sidebar {
-  border: 2px solid #f199a9;
-  border-radius: 2rem;
-  padding: 1.5rem;
-
+.sideContents {
   flex-shrink: 0;
   width: 15rem;
 }
-.main {
+.sidebar {
   border: 2px solid #f199a9;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   padding: 1.5rem;
-
+}
+.mainContents {
   width: 500px;
   flex: 1;
+}
+.main {
+  border: 2px solid #f199a9;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
 }
 
 .categoryName {
   padding: 0.4rem 0;
   font-size: 1rem;
 }
+.categoryName:hover {
+  font-weight: 700;
+  color: #f199a9;
+}
 .subCategoryName {
   padding: 0.2rem 0 0.2rem 1rem;
   font-size: 1rem;
+}
+.subCategoryName:hover {
+  font-weight: 700;
+  color: #f199a9;
 }
 .categoryCnt {
   font-size: 0.8rem;
@@ -46,22 +56,22 @@
 }
 
 .styledH1 {
-  padding: 0.5rem 0 0.2rem 0;
+  padding: 1rem 0 0.2rem 0;
 }
 .styledH2 {
-  padding: 0.5rem 0 0.2rem 0;
+  padding: 1rem 0 0.2rem 0;
 }
 .styledH3 {
-  padding: 0.5rem 0 0.2rem 0;
+  padding: 0.8rem 0 0.2rem 0;
 }
 .styledP {
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
   line-height: 1.4rem;
 }
 .styledA {
   color: #f199a9;
   text-decoration: underline;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
   line-height: 1.4rem;
 }
 .styledCode {
@@ -75,19 +85,15 @@
   color: #fff;
 }
 .styledLi {
-  margin-left: 1rem;
-  padding: 0.5rem 0;
+  margin-left: 1.5rem;
   line-height: 1.4rem;
+  padding: 0.3rem 0;
 }
 .styledOl {
-  margin-left: 1rem;
-  padding: 0.5rem 0;
-  line-height: 1.4rem;
+  padding: 0.3rem 0;
 }
 .styledUl {
-  margin-left: 1rem;
-  padding: 0.5rem 0;
-  line-height: 1.4rem;
+  padding: 0.3rem 0;
 }
 .styledBlockquote {
   border-left: 3px solid #68c6f5;
@@ -127,10 +133,10 @@
     flex-direction: column-reverse;
   }
 
-  .sidebar {
+  .sideContents {
     width: 100%;
   }
-  .main {
+  .mainContents {
     width: 100%;
   }
 }

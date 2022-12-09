@@ -49,14 +49,16 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
-    compareDesc(new Date(a.published_at), new Date(b.published_at))
-  );
+  const posts: Post[] = allPosts
+    .sort((a: Post, b: Post) =>
+      compareDesc(new Date(a.published_at), new Date(b.published_at))
+    )
+    .slice(0, 10);
   const categories: Category[] = allCategories.sort(
     (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
   );
 
-  const categoryPosts: Post | undefined = allPosts.filter((post) =>
+  const categoryPosts: Post[] | undefined = allPosts.filter((post) =>
     post?.category.includes(params?.id)
   );
 

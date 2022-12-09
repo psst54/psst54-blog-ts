@@ -12,7 +12,9 @@ const CategoryPage = ({ categoryPosts }: { categoryPosts: Post[] }) => {
 
         <div className={styles.tagList}>
           {post.tag.map((tag) => (
-            <p className={styles.tagItem}>{tag}</p>
+            <p key={tag} className={styles.tagItem}>
+              {tag}
+            </p>
           ))}
         </div>
       </div>

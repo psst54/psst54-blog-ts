@@ -1,0 +1,60 @@
+---
+title: "Ch11. Object detection"
+category: ["2022Fall", "ComputerVision"]
+tag: []
+
+published_at: 2022-12-17T16:53:43Z
+last_modified_at: 2022-12-17T16:53:43Z
+
+summary: "Object detection"
+---
+
+# recognition tasks
+
+- Scene caategorization / classification
+  - outdoor / indoor
+  - city / forest / factory / …
+- Image annotation / tagging / attributes
+  - street / people / building / mountain / tourism / cloudy / brick
+- Object detection
+  - find pedestrians
+- Image parsing / semantic segmentation
+  - sky / mountain / building / tree
+- Scene understanding
+
+# History of ideas in recognition
+
+- 1960s – early 1990s: the geometric era
+  - **Recognition as an alignment problem** : Block world
+    Invariant to
+    - Camera position
+    - Illumination
+    - Internal parameters
+  - **Recognition by components**
+    ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled.png)
+    - rigid
+      Zisserman et al. (1995)
+      ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled%201.png)
+    - non-rigid
+      Zisserman et al. (1995)
+      ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled%202.png)
+- 1990s: appearance-based models
+  ## Eigenfaces
+  (Turk & Pentland, 1991)
+  ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled%203.png)
+  ## Color Histograms
+  ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled%204.png)
+  ## Appearance manifolds
+  ![Untitled](Object%20detection%20fbafb88081884541b8938630c16ee112/Untitled%205.png)
+  feature space
+  ## Limitations of global appearance models
+  global appearance model : entire image → feature vector
+  - Requires global registration of patterns
+  - Not robust to clutter, occlusion, geometric transformations
+    translation will affect the whole feature vector
+- Mid-1990s: sliding window approache
+  ## Sliding window approaches
+- Late 1990s: local features
+- Early 2000s: parts-and-shape models
+- Mid-2000s: bags of features
+  ## Bag-of-features models

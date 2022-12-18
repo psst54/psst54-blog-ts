@@ -1,78 +1,82 @@
+// contentlayer.config.ts
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-
-export const Post = defineDocumentType(() => ({
+var Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `post/**/*.mdx`, // Type of file to parse (every mdx in all subfolders)
+  filePathPattern: `post/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
       description: "Title of the post",
-      required: true,
+      required: true
     },
     published_at: {
       type: "date",
       description: "Published time of the post",
-      required: true,
+      required: true
     },
     category: {
       type: "list",
       of: { type: "string" },
-      required: true,
+      required: true
     },
     tag: {
       type: "list",
-      of: { type: "string" },
+      of: { type: "string" }
     },
     summary: {
-      type: "string",
-    },
+      type: "string"
+    }
   },
   computedFields: {
     fileName: {
       type: "string",
-      resolve: (post) => `${post._raw.flattenedPath.slice("path/".length)}`,
-    },
-  },
+      resolve: (post) => `${post._raw.flattenedPath.slice("path/".length)}`
+    }
+  }
 }));
-
-export const Category = defineDocumentType(() => ({
+var Category = defineDocumentType(() => ({
   name: "Category",
-  filePathPattern: `category/**/*.mdx`, // Type of file to parse (every mdx in all subfolders)
+  filePathPattern: `category/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     id: {
       type: "string",
-      required: true,
+      required: true
     },
     index: {
       type: "number",
-      required: true,
+      required: true
     },
     subCategory: {
       type: "list",
-      of: { type: "string" },
-    },
-  },
+      of: { type: "string" }
+    }
+  }
 }));
-
-export const Main = defineDocumentType(() => ({
+var Main = defineDocumentType(() => ({
   name: "Main",
   filePathPattern: `main.mdx`,
-  contentType: "mdx",
+  contentType: "mdx"
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "files",
   documentTypes: [Post, Category, Main],
   mdx: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex],
-  },
+    rehypePlugins: [rehypeKatex]
+  }
 });
+export {
+  Category,
+  Main,
+  Post,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-6LBXUBZU.mjs.map

@@ -18,5 +18,6 @@
     "contentType": "mdx",
     "flattenedPath": "category/text"
   },
-  "type": "Category"
+  "type": "Category",
+  "cnt": 0
 }

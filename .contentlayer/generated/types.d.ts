@@ -19,7 +19,7 @@ export type Category = {
   subCategory?: string[] | undefined
   /** MDX file body */
   body: MDX
-
+  cnt: number
 }
 
 export type Main = {

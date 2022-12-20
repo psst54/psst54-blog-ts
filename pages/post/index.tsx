@@ -30,21 +30,17 @@ const Blog = ({
       </Head>
 
       <Header />
-      <Content
-        posts={posts}
-        categories={categories}
-        children={<PostMainPage posts={posts} />}
-      />
+      <Content posts={posts} categories={categories}>
+        <PostMainPage posts={posts.slice(0, 10)} />
+      </Content>
     </div>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts: Post[] = allPosts
-    .sort((a: Post, b: Post) =>
-      compareDesc(new Date(a.published_at), new Date(b.published_at))
-    )
-    .slice(0, 10);
+  const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
+    compareDesc(new Date(a.published_at), new Date(b.published_at))
+  );
   const categories: Category[] = allCategories.sort(
     (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
   );

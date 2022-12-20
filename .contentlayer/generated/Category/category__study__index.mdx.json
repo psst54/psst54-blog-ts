@@ -17,5 +17,6 @@
     "contentType": "mdx",
     "flattenedPath": "category/study"
   },
-  "type": "Category"
+  "type": "Category",
+  "cnt": 0
 }

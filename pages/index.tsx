@@ -12,7 +12,7 @@ import {
 } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { GetStaticProps } from "next";
-import MainPage from "@components/content/main.tsx";
+import MainPage from "@components/content/main";
 
 export default function Home({
   posts,
@@ -37,11 +37,9 @@ export default function Home({
 
       <div className={styles.container}>
         <Header />
-        <Content
-          posts={posts}
-          categories={categories}
-          children={<MainPage mainPost={mainPost} />}
-        />
+        <Content posts={posts} categories={categories}>
+          <MainPage mainPost={mainPost} />
+        </Content>
       </div>
     </div>
   );

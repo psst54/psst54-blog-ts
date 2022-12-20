@@ -25,7 +25,9 @@ const Blog = ({
       </Head>
 
       <Header />
-      <Content posts={posts} categories={categories} />
+      <Content posts={posts} categories={categories}>
+        <></>
+      </Content>
     </div>
   );
 };

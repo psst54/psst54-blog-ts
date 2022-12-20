@@ -15,11 +15,12 @@ const PostMainPage = ({ posts }: { posts: Post[] }) => {
           </a>
 
           <div className={styles.tagList}>
-            {post.tag.map((tag) => (
-              <p key={tag} className={styles.tagItem}>
-                {tag}
-              </p>
-            ))}
+            {post.tag &&
+              post.tag.map((tag) => (
+                <p key={tag} className={styles.tagItem}>
+                  {tag}
+                </p>
+              ))}
           </div>
         </div>
       ))}

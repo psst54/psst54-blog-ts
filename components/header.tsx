@@ -1,4 +1,5 @@
 import styles from "@styles/home.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -6,20 +7,20 @@ const Header = () => {
       <ul className={styles.headerMenu}>
         <li className={styles.menuTitle}>
           <span className={styles.highlight}>
-            <a href="/post">blog</a>
+            <Link href="/post">blog</Link>
           </span>
         </li>
 
         <li className={styles.menuTitle}>
           <span className={styles.highlight}>
-            <a href="/about">about</a>
+            <Link href="/about">about</Link>
           </span>
         </li>
       </ul>
 
-      <a href="/">
+      <Link href="/">
         <h1 className={styles.title}>abs(YES)</h1>
-      </a>
+      </Link>
     </div>
   );
 };

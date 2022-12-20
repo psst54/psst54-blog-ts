@@ -1,5 +1,6 @@
 import styles from "@styles/components/content.module.css";
 import { type Post, type Category } from "contentlayer/generated";
+import { ReactNode } from "react";
 
 const Content = ({
   posts,
@@ -8,7 +9,7 @@ const Content = ({
 }: {
   posts: Post[];
   categories: Category[];
-  children: Element | undefined;
+  children: ReactNode | undefined;
 }) => {
   categories = categories.map((category) => {
     return {
@@ -36,6 +37,7 @@ const Content = ({
 
                   {categories.map(
                     (subCategory) =>
+                      category.subCategory &&
                       category.subCategory.includes(subCategory.id) && (
                         <ul
                           className={styles.subCategoryName}

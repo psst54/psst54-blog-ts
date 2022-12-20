@@ -65,6 +65,12 @@ export const Category = defineDocumentType(() => ({
       of: { type: "string" },
     },
   },
+  computedFields: {
+    cnt: {
+      type: "number",
+      resolve: () => 0,
+    },
+  },
 }));
 
 export const Main = defineDocumentType(() => ({

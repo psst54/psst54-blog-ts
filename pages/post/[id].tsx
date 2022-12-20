@@ -32,11 +32,9 @@ const Post = ({
       </Head>
 
       <Header />
-      <Content
-        posts={posts}
-        categories={categories}
-        children={<PostPage post={currentPost} />}
-      />
+      <Content posts={posts} categories={categories}>
+        <PostPage post={currentPost} />
+      </Content>
     </div>
   );
 };

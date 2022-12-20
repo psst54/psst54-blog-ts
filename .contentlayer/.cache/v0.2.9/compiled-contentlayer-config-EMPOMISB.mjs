@@ -63,6 +63,12 @@ var Category = defineDocumentType(() => ({
       type: "list",
       of: { type: "string" }
     }
+  },
+  computedFields: {
+    cnt: {
+      type: "number",
+      resolve: () => 0
+    }
   }
 }));
 var Main = defineDocumentType(() => ({
@@ -84,4 +90,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-YDDV3G3B.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-EMPOMISB.mjs.map

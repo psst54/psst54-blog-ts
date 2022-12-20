@@ -17,6 +17,11 @@ export const Post = defineDocumentType(() => ({
       description: "Published time of the post",
       required: true,
     },
+    last_modified_at: {
+      type: "date",
+      description: "Last modified time of the post",
+      required: true,
+    },
     category: {
       type: "list",
       of: { type: "string" },

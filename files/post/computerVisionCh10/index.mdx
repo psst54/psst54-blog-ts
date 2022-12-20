@@ -3,8 +3,8 @@ title: "Ch10. Fitting and Alignment"
 category: ["2022Fall", "ComputerVision"]
 tag: []
 
-published_at: 2022-12-17T16:52:55Z
-last_modified_at: 2022-12-17T16:52:55Z
+published_at: 2022-12-20T13:24:09Z
+last_modified_at: 2022-12-20T13:24:09Z
 
 summary: "Fitting and Alignment"
 ---
@@ -22,14 +22,12 @@ Difficulties
 
 ## Parametric (global) warping
 
-Transformation T is a coordinate-changing machine: $p' = T(p)$
-
-global :
-
-- Is the same for any point p
-- can be described by just a few numbers (parameters)
-
-For linear transformations, we can represent T as a matrix
+- Transformation T is a coordinate-changing machine: $p' = T(p)$
+- T is global
+- global :
+  - Is the same for any point p
+  - can be described by just a few numbers (parameters)
+- For linear transformations, we can represent T as a matrix
 
 $\begin{bmatrix}
 x'\\
@@ -84,7 +82,7 @@ y
     x\\
     y
     \end{bmatrix}$
-- Even though sin() and cos() are nonlinear functions of $\theta$
+- Even though sin($\theta$) and cos($\theta$) are nonlinear functions of $\theta$
   - x’ is a linear combination of x and y
   - y’ is a linear combination of x and y
 - What is the inverse transformation?
@@ -160,6 +158,22 @@ y
     y\\
     1
     \end{bmatrix}$
+  or
+  $\begin{bmatrix}
+    x'\\
+    y'\\
+    1
+    \end{bmatrix} =
+    \begin{bmatrix}
+    a & b & c\\
+    d & e & f\\
+    0 & 0 & 1
+    \end{bmatrix}
+    \begin{bmatrix}
+    x\\
+    y\\
+    1
+    \end{bmatrix}$
 
 ### Affine Transformations
 
@@ -175,7 +189,7 @@ Properties of affine transformations:
 - Ratios are preserved
 - Closed under composition
 
-## Projective Transformations
+## Projective(perspective) Transformations
 
 $\begin{bmatrix}
 x'\\
@@ -207,25 +221,32 @@ Properties of projective transformations:
 - Models change of basis
 - **Projective matrix is defined up to a scale (8 DOF)**
 
-![Untitled](Fitting%20and%20Alignment%2010af6b42dbc84efa860d9710044c2778/Untitled.png)
+![Untitled](/post/computerVisionCh10/Untitled.png)
 
-## Iterative Closest Points (ICP) Algorithm
+# Example: solving for translation
+
+1. Least squares solution
+
+   Problem: outliers
+
+2. RANSAC solution
+
+   Problem: outliers, multiple objects, and/or many-to-one matches
+
+3. Hough transform solution
+
+   Problem: no initial guesses for correspondence
+
+# Iterative Closest Points (ICP) Algorithm
 
 If we don’t have initial alignment
 
 estimate transform between two dense sets of points
 
-1. Initialize transformation (e.g., compute difference in means and
+1. **Initialize** transformation (e.g., compute difference in means and
    scale)
-2. Assign each point in set 1 to its nearest neighbor in set 2
-3. Estimate transformation parameters
+2. **Assign** each point in Set 1 to its nearest neighbor in Set 2
+3. **Estimate** transformation parameters
    - e.g., least squares or robust least squares
-4. Transform the points in set 1 using estimated parameters
-5. Repeat steps 2-4 until change is very small
-
-6. Extract edge pixels $p_1\cdots p_n$ and $q_1\cdots q_m$
-7. Compute initial transformation (e.g., compute translation and scaling by center of mass, variance within each image)
-8. Get nearest neighbors: for each point $p_i$ find corresponding $\text{match}(i) = \text{argmin} dist(pi, qj)$
-9. Compute transformation $T$ based on matches
-10. Warp points $p$ according to $T$
-11. Repeat 3-5 until convergence
+4. **Transform** the points in Set 1 using estimated parameters
+5. **Repeat** steps 2-4 until change is very small

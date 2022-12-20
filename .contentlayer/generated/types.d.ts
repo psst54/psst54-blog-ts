@@ -41,6 +41,8 @@ export type Post = {
   title: string
   /** Published time of the post */
   published_at: IsoDateTimeString
+  /** Last modified time of the post */
+  last_modified_at: IsoDateTimeString
   category: string[]
   tag?: string[] | undefined
   summary?: string | undefined

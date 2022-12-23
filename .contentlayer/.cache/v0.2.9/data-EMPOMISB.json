@@ -96,57 +96,6 @@
       "hasWarnings": false,
       "documentTypeName": "Category"
     },
-    "category/PS/BOJ.mdx": {
-      "document": {
-        "title": "BOJ",
-        "id": "BOJ",
-        "index": 0,
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var g=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!j.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var p=(t,n,e)=>(e=t!=null?u(_(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var x=g((J,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>C,frontmatter:()=>O});var r=p(x()),O={title:\"BOJ\",id:\"BOJ\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function B(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=B;return M(D);})();\n;return Component;"
-        },
-        "_id": "category/PS/BOJ.mdx",
-        "_raw": {
-          "sourceFilePath": "category/PS/BOJ.mdx",
-          "sourceFileName": "BOJ.mdx",
-          "sourceFileDir": "category/PS",
-          "contentType": "mdx",
-          "flattenedPath": "category/PS/BOJ"
-        },
-        "type": "Category",
-        "cnt": 0
-      },
-      "documentHash": "1669846462380",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
-    "category/PS/index.mdx": {
-      "document": {
-        "title": "PS",
-        "id": "PS",
-        "index": 1,
-        "subCategory": [
-          "BOJ"
-        ],
-        "body": {
-          "raw": "",
-          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var u=j((O,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(u()),M={title:\"PS\",id:\"PS\",subCategory:[\"BOJ\"],index:1};function x(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=b;return C(D);})();\n;return Component;"
-        },
-        "_id": "category/PS/index.mdx",
-        "_raw": {
-          "sourceFilePath": "category/PS/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "category/PS",
-          "contentType": "mdx",
-          "flattenedPath": "category/PS"
-        },
-        "type": "Category",
-        "cnt": 0
-      },
-      "documentHash": "1669846115373",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
     "category/study/index.mdx": {
       "document": {
         "title": "공부한거",
@@ -195,6 +144,57 @@
         "cnt": 0
       },
       "documentHash": "1670113261364",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/PS/BOJ.mdx": {
+      "document": {
+        "title": "BOJ",
+        "id": "BOJ",
+        "index": 0,
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var g=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),l=(t,n)=>{for(var e in n)a(t,e,{get:n[e],enumerable:!0})},s=(t,n,e,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of f(n))!j.call(t,o)&&o!==e&&a(t,o,{get:()=>n[o],enumerable:!(i=d(n,o))||i.enumerable});return t};var p=(t,n,e)=>(e=t!=null?u(_(t)):{},s(n||!t||!t.__esModule?a(e,\"default\",{value:t,enumerable:!0}):e,t)),M=t=>s(a({},\"__esModule\",{value:!0}),t);var x=g((J,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>C,frontmatter:()=>O});var r=p(x()),O={title:\"BOJ\",id:\"BOJ\",index:0};function m(t){return(0,r.jsx)(r.Fragment,{})}function B(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var C=B;return M(D);})();\n;return Component;"
+        },
+        "_id": "category/PS/BOJ.mdx",
+        "_raw": {
+          "sourceFilePath": "category/PS/BOJ.mdx",
+          "sourceFileName": "BOJ.mdx",
+          "sourceFileDir": "category/PS",
+          "contentType": "mdx",
+          "flattenedPath": "category/PS/BOJ"
+        },
+        "type": "Category",
+        "cnt": 0
+      },
+      "documentHash": "1669846462380",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/PS/index.mdx": {
+      "document": {
+        "title": "PS",
+        "id": "PS",
+        "index": 1,
+        "subCategory": [
+          "BOJ"
+        ],
+        "body": {
+          "raw": "",
+          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=d(e,o))||s.enumerable});return t};var p=(t,e,n)=>(n=t!=null?m(_(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),C=t=>i(a({},\"__esModule\",{value:!0}),t);var u=j((O,c)=>{c.exports=_jsx_runtime});var D={};l(D,{default:()=>y,frontmatter:()=>M});var r=p(u()),M={title:\"PS\",id:\"PS\",subCategory:[\"BOJ\"],index:1};function x(t){return(0,r.jsx)(r.Fragment,{})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(x,t)})):x(t)}var y=b;return C(D);})();\n;return Component;"
+        },
+        "_id": "category/PS/index.mdx",
+        "_raw": {
+          "sourceFilePath": "category/PS/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "category/PS",
+          "contentType": "mdx",
+          "flattenedPath": "category/PS"
+        },
+        "type": "Category",
+        "cnt": 0
+      },
+      "documentHash": "1669846115373",
       "hasWarnings": false,
       "documentTypeName": "Category"
     },
@@ -520,6 +520,36 @@
       "hasWarnings": false,
       "documentTypeName": "Post"
     },
+    "post/firstPost/index.mdx": {
+      "document": {
+        "title": "블로그 만들어",
+        "published_at": "2022-12-01T09:00:00.000Z",
+        "last_modified_at": "2022-12-01T09:00:00.000Z",
+        "category": [
+          "text"
+        ],
+        "tag": [
+          "일기"
+        ],
+        "body": {
+          "raw": "\r\n와 뭐했다고 벌써 12월\r\n",
+          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var _=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var l=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!f.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(c=_(e,o))||c.enumerable});return t};var g=(t,e,n)=>(n=t!=null?x(p(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),D=t=>s(a({},\"__esModule\",{value:!0}),t);var m=l((C,i)=>{i.exports=_jsx_runtime});var M={};j(M,{default:()=>w,frontmatter:()=>b});var r=g(m()),b={title:\"\\uBE14\\uB85C\\uADF8 \\uB9CC\\uB4E4\\uC5B4\",category:[\"text\"],tag:[\"\\uC77C\\uAE30\"],published_at:new Date(16698852e5),last_modified_at:new Date(16698852e5)};function u(t){let e=Object.assign({p:\"p\"},t.components);return(0,r.jsx)(e.p,{children:\"\\uC640 \\uBB50\\uD588\\uB2E4\\uACE0 \\uBC8C\\uC368 12\\uC6D4\"})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(u,t)})):u(t)}var w=h;return D(M);})();\n;return Component;"
+        },
+        "_id": "post/firstPost/index.mdx",
+        "_raw": {
+          "sourceFilePath": "post/firstPost/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "post/firstPost",
+          "contentType": "mdx",
+          "flattenedPath": "post/firstPost"
+        },
+        "type": "Post",
+        "fileName": "firstPost"
+      },
+      "documentHash": "1669940218180",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
     "post/introToPhi1027/index.mdx": {
       "document": {
         "title": "20221027 철학개론",
@@ -550,36 +580,6 @@
         "fileName": "introToPhi1027"
       },
       "documentHash": "1670451229461",
-      "hasWarnings": false,
-      "documentTypeName": "Post"
-    },
-    "post/firstPost/index.mdx": {
-      "document": {
-        "title": "블로그 만들어",
-        "published_at": "2022-12-01T09:00:00.000Z",
-        "last_modified_at": "2022-12-01T09:00:00.000Z",
-        "category": [
-          "text"
-        ],
-        "tag": [
-          "일기"
-        ],
-        "body": {
-          "raw": "\r\n와 뭐했다고 벌써 12월\r\n",
-          "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var _=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var l=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!f.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(c=_(e,o))||c.enumerable});return t};var g=(t,e,n)=>(n=t!=null?x(p(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),D=t=>s(a({},\"__esModule\",{value:!0}),t);var m=l((C,i)=>{i.exports=_jsx_runtime});var M={};j(M,{default:()=>w,frontmatter:()=>b});var r=g(m()),b={title:\"\\uBE14\\uB85C\\uADF8 \\uB9CC\\uB4E4\\uC5B4\",category:[\"text\"],tag:[\"\\uC77C\\uAE30\"],published_at:new Date(16698852e5),last_modified_at:new Date(16698852e5)};function u(t){let e=Object.assign({p:\"p\"},t.components);return(0,r.jsx)(e.p,{children:\"\\uC640 \\uBB50\\uD588\\uB2E4\\uACE0 \\uBC8C\\uC368 12\\uC6D4\"})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(u,t)})):u(t)}var w=h;return D(M);})();\n;return Component;"
-        },
-        "_id": "post/firstPost/index.mdx",
-        "_raw": {
-          "sourceFilePath": "post/firstPost/index.mdx",
-          "sourceFileName": "index.mdx",
-          "sourceFileDir": "post/firstPost",
-          "contentType": "mdx",
-          "flattenedPath": "post/firstPost"
-        },
-        "type": "Post",
-        "fileName": "firstPost"
-      },
-      "documentHash": "1669940218180",
       "hasWarnings": false,
       "documentTypeName": "Post"
     },

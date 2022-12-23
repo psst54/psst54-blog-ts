@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@components/header";
 import Content from "@components/content";
-import styles from "@styles/home.module.css";
+import styles from "@styles/Home.module.css";
 import {
   allPosts,
   allCategories,

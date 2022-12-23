@@ -4,11 +4,11 @@ import post__boj12865__indexMdx from './post__boj12865__index.mdx.json' assert {
 import post__boj7579__indexMdx from './post__boj7579__index.mdx.json' assert { type: 'json' }
 import post__computerVisionCh10__indexMdx from './post__computerVisionCh10__index.mdx.json' assert { type: 'json' }
 import post__computerVisionCh11__indexMdx from './post__computerVisionCh11__index.mdx.json' assert { type: 'json' }
-import post__computerVisionCh12__indexMdx from './post__computerVisionCh12__index.mdx.json' assert { type: 'json' }
 import post__computerVisionCh13__indexMdx from './post__computerVisionCh13__index.mdx.json' assert { type: 'json' }
+import post__computerVisionCh12__indexMdx from './post__computerVisionCh12__index.mdx.json' assert { type: 'json' }
 import post__computerVisionCh14__indexMdx from './post__computerVisionCh14__index.mdx.json' assert { type: 'json' }
-import post__computerVisionCh9__indexMdx from './post__computerVisionCh9__index.mdx.json' assert { type: 'json' }
 import post__firstPost__indexMdx from './post__firstPost__index.mdx.json' assert { type: 'json' }
+import post__computerVisionCh9__indexMdx from './post__computerVisionCh9__index.mdx.json' assert { type: 'json' }
 import post__introToPhi1027__indexMdx from './post__introToPhi1027__index.mdx.json' assert { type: 'json' }
 import post__introToPhi1101__indexMdx from './post__introToPhi1101__index.mdx.json' assert { type: 'json' }
 import post__introToPhi1103__indexMdx from './post__introToPhi1103__index.mdx.json' assert { type: 'json' }
@@ -19,4 +19,4 @@ import post__introToPhi1208__indexMdx from './post__introToPhi1208__index.mdx.js
 import post__learnOpenGlTextures__indexMdx from './post__LearnOpenGLTextures__index.mdx.json' assert { type: 'json' }
 import post__twentyTwoDecPrologue__indexMdx from './post__twentyTwoDecPrologue__index.mdx.json' assert { type: 'json' }
 
-export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx, post__computerVisionCh10__indexMdx, post__computerVisionCh11__indexMdx, post__computerVisionCh12__indexMdx, post__computerVisionCh13__indexMdx, post__computerVisionCh14__indexMdx, post__computerVisionCh9__indexMdx, post__firstPost__indexMdx, post__introToPhi1027__indexMdx, post__introToPhi1101__indexMdx, post__introToPhi1103__indexMdx, post__introToPhi1108__indexMdx, post__introToPhi1110__indexMdx, post__introToPhi1115__indexMdx, post__introToPhi1208__indexMdx, post__learnOpenGlTextures__indexMdx, post__twentyTwoDecPrologue__indexMdx]
+export const allPosts = [post__boj12865__indexMdx, post__boj7579__indexMdx, post__computerVisionCh10__indexMdx, post__computerVisionCh11__indexMdx, post__computerVisionCh13__indexMdx, post__computerVisionCh12__indexMdx, post__computerVisionCh14__indexMdx, post__firstPost__indexMdx, post__computerVisionCh9__indexMdx, post__introToPhi1027__indexMdx, post__introToPhi1101__indexMdx, post__introToPhi1103__indexMdx, post__introToPhi1108__indexMdx, post__introToPhi1110__indexMdx, post__introToPhi1115__indexMdx, post__introToPhi1208__indexMdx, post__learnOpenGlTextures__indexMdx, post__twentyTwoDecPrologue__indexMdx]

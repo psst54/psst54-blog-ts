@@ -14,22 +14,6 @@ import "katex/dist/katex.min.css";
 
 import { useMDXComponent } from "next-contentlayer/hooks";
 
-const Code: FunctionComponent = (
-  className: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
-  children: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
-  ...props: any
-) => {
-  const match = /language-(\w+)/.exec(String(className));
-  return match ? (
-    <SyntaxHighlighter style={nord} language={match[1]} PreTag="div" {...props}>
-      {String(children).replace(/\n$/, "")}
-    </SyntaxHighlighter>
-  ) : (
-    <code className={styles.styledCode} {...props}>
-      {children}
-    </code>
-  );
-};
 const Aside = ({ children, ...props }: { children: ReactNode }) => {
   return <div className={styles.styledBox}>{children}</div>;
 };
@@ -79,12 +63,26 @@ const Content = ({ post }: { post: Post }) => {
         style={{ maxWidth: "100%", height: "auto" }}
       />
     ),
-    code: Code,
+    code: (props: any) => {
+      const match = /language-(\w+)/.exec(String(props.className));
+      return match ? (
+        <SyntaxHighlighter
+          style={nord}
+          language={match[1]}
+          PreTag="div"
+          {...props}
+        >
+          {String(props.children).replace(/\n$/, "")}
+        </SyntaxHighlighter>
+      ) : (
+        <code className={styles.styledCode} {...props}>
+          {props.children}
+        </code>
+      );
+    },
     Aside,
     Highlight,
   };
-
-  console.log(post);
 
   const MDXContent = useMDXComponent(post.body.code);
 

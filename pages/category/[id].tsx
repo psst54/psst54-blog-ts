@@ -21,8 +21,10 @@ const Post = ({
   categories: Category[];
   categoryPosts: Post[];
 }) => {
+  console.log("!!!!");
+
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES) | category</title>
         <meta
@@ -31,10 +33,12 @@ const Post = ({
         />
       </Head>
 
-      <Header />
-      <Content posts={posts} categories={categories}>
-        <CategoryPage categoryPosts={categoryPosts} />
-      </Content>
+      <div className={styles.container}>
+        <Header />
+        <Content posts={posts} categories={categories}>
+          <CategoryPage categoryPosts={categoryPosts} />
+        </Content>
+      </div>
     </div>
   );
 };
@@ -50,6 +54,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const posts: Post[] = allPosts.sort((a: Post, b: Post) =>
     compareDesc(new Date(a.published_at), new Date(b.published_at))
   );
+
   const categories: Category[] = allCategories.sort(
     (a: Category, b: Category) => (a.index < b.index ? -1 : 1)
   );

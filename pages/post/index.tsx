@@ -19,8 +19,10 @@ const Blog = ({
   posts: Post[];
   categories: Category[];
 }) => {
+  const showPostNum = 5;
+
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES) | post</title>
         <meta
@@ -29,10 +31,12 @@ const Blog = ({
         />
       </Head>
 
-      <Header />
-      <Content posts={posts} categories={categories}>
-        <PostMainPage posts={posts.slice(0, 10)} />
-      </Content>
+      <div className={styles.container}>
+        <Header />
+        <Content posts={posts} categories={categories}>
+          <PostMainPage posts={posts.slice(0, showPostNum)} />
+        </Content>
+      </div>
     </div>
   );
 };

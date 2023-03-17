@@ -22,7 +22,7 @@ const Post = ({
   currentPost: Post;
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES) | {currentPost.title}</title>
         <meta
@@ -31,10 +31,12 @@ const Post = ({
         />
       </Head>
 
-      <Header />
-      <Content posts={posts} categories={categories}>
-        <PostPage post={currentPost} />
-      </Content>
+      <div className={styles.container}>
+        <Header />
+        <Content posts={posts} categories={categories}>
+          <PostPage post={currentPost} />
+        </Content>
+      </div>
     </div>
   );
 };

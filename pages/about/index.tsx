@@ -19,7 +19,7 @@ const Blog = ({
   categories: Category[];
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES) | about</title>
         <meta
@@ -28,10 +28,12 @@ const Blog = ({
         />
       </Head>
 
-      <Header />
-      <Content posts={posts} categories={categories}>
-        <></>
-      </Content>
+      <div className={styles.container}>
+        <Header />
+        <Content posts={posts} categories={categories}>
+          <></>
+        </Content>
+      </div>
     </div>
   );
 };

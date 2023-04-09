@@ -31,7 +31,7 @@ const Blog = ({
       <div className={styles.container}>
         <Header />
         <Content posts={posts} categories={categories}>
-          <></>
+          <div>무슨 내용을 넣으면 좋을까요?</div>
         </Content>
       </div>
     </div>

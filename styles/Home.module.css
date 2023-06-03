@@ -1,14 +1,15 @@
 .fullScreen {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #eceaf0;
 }
 
 .container {
   width: 100%;
-  /* max-width: 1320px; */
+  max-width: 1320px;
   min-height: 100vh;
-  /* background: #e7e4eb; */
-  background: #eceaf0;
 
   padding: 3% 3%;
 }
@@ -19,8 +20,6 @@
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 
-  /* background: #68c6f5; */
-  /* background: #f199a9; */
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

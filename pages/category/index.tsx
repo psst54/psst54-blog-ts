@@ -19,15 +19,21 @@ const Blog = ({
   categories: Category[];
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.fullScreen}>
       <Head>
         <title>abs(YES) | category</title>
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+        />
       </Head>
 
-      <Header />
-      <Content posts={posts} categories={categories}>
-        <></>
-      </Content>
+      <div className={styles.container}>
+        <Header />
+        <Content posts={posts} categories={categories}>
+          <></>
+        </Content>
+      </div>
     </div>
   );
 };

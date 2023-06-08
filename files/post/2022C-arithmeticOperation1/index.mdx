@@ -1,0 +1,168 @@
+---
+title: "📂 사칙연산(1)"
+category: ["study", "2022SpringClang"]
+tag: ["2주차"]
+
+published_at: 2022-04-05T04:33:47Z
+last_modified_at: 2023-06-08T04:33:47Z
+
+summary: "더하기, 빼기, 곱하기, 나누기를 계산해봅시다"
+---
+
+이제 더 나아가서, a, b를 입력받고 a + b를 출력하는 프로그램을 작성해 봅시다.
+
+<br />
+
+# 덧셈, 뺄셈
+
+덧셈과 뺄셈은 우리가 아는 것과 크게 다르지 않습니다.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	int a = 5, b = 7;
+
+	int add = a + b;
+	int sub = a - b;
+
+	printf("a + b = %d\n", add);
+	printf("a - b = %d\n", sub);
+	return 0;
+}
+```
+
+```text
+a + b = 12
+a - b = -2
+```
+
+</div>
+
+이렇게 `+`와 `-` 연산자를 이용해서 더하기와 빼기를 계산할 수 있습니다.
+
+add, sub에 a + b, a - b의 결과를 다시 저장해야 결과값을 이용할 수 있다는 사실을 기억해주세요.
+
+<br />
+
+혹은 더 간단히,
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	int a = 5, b = 7;
+	printf("a + b = %d\n", a + b);
+	printf("a - b = %d\n", a - b);
+	return 0;
+}
+```
+
+```text
+a + b = 12
+a - b = -2
+```
+
+</div>
+
+처럼 사용할 수도 있습니다.
+
+# 곱셈
+
+곱셈은 `*` 연산자를 사용해주세요.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	int a = 5, b = 7;
+	printf("a * b = %d\n", a * b);
+	return 0;
+}
+```
+
+```text
+a * b = 35
+```
+
+</div>
+
+# 나눗셈
+
+나눗셈의 경우에는 `/` 연산자를 사용해주세요.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+int a = 5, b = 7;
+printf("a / b = %d\n", a / b);
+return 0;
+}
+
+```
+
+```text
+a / b = 0
+```
+
+</div>
+
+어라, 5 / 7의 결과값으로 0이 나왔습니다.
+
+C언어에서는 정수(int)끼리 나눗셈을 하면 정수 값이 나오게 됩니다. 5는 7로 나누었을 때의 몫이 0이기 때문에 0을 출력한 것입니다.
+
+<br />
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+double a = 5, b = 7;
+printf("a / b = %lf\n", a / b);
+return 0;
+}
+
+```
+
+```text
+a / b = 0.714286
+```
+
+</div>
+
+int형을 double형으로 바꾸고, 출력도 `%lf`를 이용하여 실수로 출력했습니다. 이제 우리가 원하는 결과를 얻게 되었네요.
+
+# 나머지 구하기
+
+C언어에서는 나눗셈의 나머지만을 따로 구할 수 있습니다.
+
+나머지를 구할 때는 `%` 연산자를 사용합니다.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	int a = 15, b = 7;
+	printf("a % b = %d\n", a % b);
+	return 0;
+}
+```
+
+```text
+a % b = 1
+```
+
+</div>

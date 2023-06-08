@@ -5,12 +5,31 @@ import { type Post } from "contentlayer/generated";
 
 const CategoryPage = ({ categoryPosts }: { categoryPosts: Post[] }) => {
   const router = useRouter();
-  const showPageNum = 5;
-  const maxPageNum = Math.ceil(categoryPosts.length / showPageNum);
+  const [showPageNum, setShowPageNum] = react.useState(5);
+  const [maxPageNum, setMaxPageNum] = react.useState(
+    Math.ceil(categoryPosts.length / 5)
+  );
 
   const [currentPage, setCurrentPage] = react.useState(1);
   const [showPost, setShowPost] = react.useState<Post[]>([]);
   const pathname = usePathname();
+
+  const onChageShowPageNum = ({ value }: { value: number }) => {
+    setShowPageNum(value);
+    setMaxPageNum(Math.ceil(categoryPosts.length / value));
+
+    router.push(pathname + "?page=" + 1);
+  };
+
+  const setPage = ({ page }: { page: number }) => {
+    setCurrentPage(page);
+    setShowPost(
+      categoryPosts.slice(
+        showPageNum * (page - 1),
+        showPageNum * (page - 1) + showPageNum
+      )
+    );
+  };
 
   react.useEffect(() => {
     const query = window.location.search
@@ -28,17 +47,36 @@ const CategoryPage = ({ categoryPosts }: { categoryPosts: Post[] }) => {
         : maxPageNum
       : 1;
 
-    setCurrentPage(page);
-    setShowPost(
-      categoryPosts.slice(
-        showPageNum * (page - 1),
-        showPageNum * (page - 1) + showPageNum
-      )
-    );
+    setPage({ page });
   }, [router]);
 
   return (
     <div>
+      {/* <div>
+        한 페이지에 표시할 포스트 수
+        <div
+          onClick={() => {
+            onChageShowPageNum({ value: 5 });
+          }}
+        >
+          5개
+        </div>
+        <div
+          onClick={() => {
+            onChageShowPageNum({ value: 7 });
+          }}
+        >
+          7개
+        </div>
+        <div
+          onClick={() => {
+            onChageShowPageNum({ value: 10 });
+          }}
+        >
+          10개
+        </div>
+      </div> */}
+
       {showPost.map((post) => (
         <div key={post._id} className={styles.postCard}>
           <a href={`/${post._raw.flattenedPath}`} className={styles.postText}>

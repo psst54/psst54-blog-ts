@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://psst54-blog-ts.pages.dev/
+
+# Sitemaps
+Sitemap: https://psst54-blog-ts.pages.dev/sitemap.xml

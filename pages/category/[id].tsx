@@ -17,12 +17,16 @@ const Post = ({
   posts,
   categories,
   categoryPosts,
+  description,
 }: {
   paramsId: string;
   posts: Post[];
   categories: Category[];
   categoryPosts: Post[];
+  description: any;
 }) => {
+  console.log(description);
+
   return (
     <div className={styles.fullScreen}>
       <Head>
@@ -30,6 +34,10 @@ const Post = ({
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+          name="description"
+          content={description || "psst54의 공부 블로그"}
         />
       </Head>
 
@@ -63,7 +71,19 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     post.category.includes(params!.id!.toString())
   );
 
-  return { props: { posts, categories, categoryPosts, paramsId: params?.id } };
+  const currentCategory: Category | undefined = allCategories.find(
+    (post) => post?.id === params?.id
+  );
+
+  return {
+    props: {
+      posts,
+      categories,
+      categoryPosts,
+      paramsId: params?.id,
+      description: currentCategory?.description,
+    },
+  };
 };
 
 export default Post;

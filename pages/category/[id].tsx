@@ -13,10 +13,12 @@ import { GetStaticProps } from "next";
 import CategoryPage from "@components/content/category";
 
 const Post = ({
+  paramsId,
   posts,
   categories,
   categoryPosts,
 }: {
+  paramsId: string;
   posts: Post[];
   categories: Category[];
   categoryPosts: Post[];
@@ -24,7 +26,7 @@ const Post = ({
   return (
     <div className={styles.fullScreen}>
       <Head>
-        <title>abs(YES) | category</title>
+        <title>abs(YES) | {paramsId}</title>
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
@@ -61,7 +63,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     post.category.includes(params!.id!.toString())
   );
 
-  return { props: { posts, categories, categoryPosts } };
+  return { props: { posts, categories, categoryPosts, paramsId: params?.id } };
 };
 
 export default Post;

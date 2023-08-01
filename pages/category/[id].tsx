@@ -13,21 +13,29 @@ import { GetStaticProps } from "next";
 import CategoryPage from "@components/content/category";
 
 const Post = ({
+  paramsId,
   posts,
   categories,
   categoryPosts,
+  description,
 }: {
+  paramsId: string;
   posts: Post[];
   categories: Category[];
   categoryPosts: Post[];
+  description: string | null;
 }) => {
   return (
     <div className={styles.fullScreen}>
       <Head>
-        <title>abs(YES) | category</title>
+        <title>abs(YES) | {paramsId}</title>
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+          name="description"
+          content={description ? description : "psst54의 공부 블로그"}
         />
       </Head>
 
@@ -61,7 +69,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     post.category.includes(params!.id!.toString())
   );
 
-  return { props: { posts, categories, categoryPosts } };
+  const currentCategory: Category | undefined = allCategories.find(
+    (post) => post?.id === params?.id
+  );
+
+  return {
+    props: {
+      posts,
+      categories,
+      categoryPosts,
+      paramsId: params?.id,
+      description: currentCategory?.description
+        ? currentCategory?.description
+        : null,
+    },
+  };
 };
 
 export default Post;

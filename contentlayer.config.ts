@@ -64,6 +64,10 @@ export const Category = defineDocumentType(() => ({
       type: "list",
       of: { type: "string" },
     },
+    description: {
+      type: "string",
+      required: false,
+    },
   },
   computedFields: {
     cnt: {

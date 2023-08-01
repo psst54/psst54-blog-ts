@@ -24,6 +24,7 @@
 
 .tagList {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .tagItem {

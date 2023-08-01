@@ -23,10 +23,8 @@ const Post = ({
   posts: Post[];
   categories: Category[];
   categoryPosts: Post[];
-  description: any;
+  description: string | null;
 }) => {
-  console.log(description);
-
   return (
     <div className={styles.fullScreen}>
       <Head>
@@ -37,7 +35,7 @@ const Post = ({
         />
         <meta
           name="description"
-          content={description || "psst54의 공부 블로그"}
+          content={description ? description : "psst54의 공부 블로그"}
         />
       </Head>
 
@@ -81,7 +79,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       categories,
       categoryPosts,
       paramsId: params?.id,
-      description: currentCategory?.description,
+      description: currentCategory?.description
+        ? currentCategory?.description
+        : null,
     },
   };
 };

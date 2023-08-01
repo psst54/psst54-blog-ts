@@ -90,7 +90,12 @@ const Content = ({ post }: { post: Post }) => {
     <div>
       <div className={styles.postHeader}>
         <h1 className={styles.postTitle}>{post.title}</h1>
-        <p className={styles.postDate}>{dateToString(post.published_at)}</p>
+        <p className={styles.postDate}>
+          포스트 : {dateToString(post.published_at)}
+        </p>
+        <p className={styles.postDate}>
+          최근 수정 : {dateToString(post.last_modified_at)}
+        </p>
       </div>
 
       <MDXContent components={components} />

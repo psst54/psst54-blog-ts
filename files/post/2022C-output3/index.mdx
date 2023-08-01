@@ -1,0 +1,138 @@
+---
+title: "📂 출력(3) - 형식 지정자와 출력하기"
+category: ["study", "2022SpringClang"]
+tag: ["2주차"]
+
+published_at: 2022-04-05T04:06:50Z
+last_modified_at: 2023-06-08T04:06:50Z
+
+summary: "%d, %c같은 형식 지정자를 이용해서 출력해봅시다"
+---
+
+이전 글에서는 입력을 받아서 저장 공간에 저장하는 방법을 공부했습니다.
+
+하지만 이렇게 입력받은 데이터가 잘 저장되었는지도 확인해봐야겠죠?
+
+<br />
+
+아래 코드를 소스 파일에 입력하고 실행해 보세요. 검은 콘솔 창이 나타난다면 원하는 정수를 하나 입력하고 엔터키를 눌러주세요. 엔터키를 누르면 입력한 정수가 다시 출력되나요?
+
+실행하는 방법을 잊었다면 [여기](/post/2022C-output1)를 다시 보고 실행해주세요.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	int number;
+	scanf("%d", &number);
+	printf("%d", number);
+	return 0;
+}
+```
+
+<br />
+
+`number`에 데이터를 저장하는 코드에 `number`를 출력하는 한 줄이 추가되었습니다.
+
+`printf()` 함수 역시 형식지정자와 함께 사용할 수 있습니다.
+
+- `printf(”%d”, print할 내용);` 은 콤마 뒤의 내용을 int형으로 출력할 수 있습니다.
+
+- `printf(”%f”, print할 내용;` 은 콤마 뒤의 내용을 float형으로 출력할 수 있습니다.
+
+- `printf(”%lf”, print할 내용);` 은 콤마 뒤의 내용을 double형으로 출력할 수 있습니다.
+
+- `printf(”%c”, print할 내용);` 은 콤마 뒤의 내용을 char형으로 출력할 수 있습니다.
+
+<br />
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	printf("%d\n", 1);
+	printf("%f\n", 3.14);
+	printf("%lf\n", 2.71);
+	printf("%c\n", 'a');
+	return 0;
+}
+```
+
+```text
+1
+3.140000
+2.710000
+a
+```
+
+</div>
+
+위 코드를 실행해 보세요. 오른쪽처럼 결과가 나오나요?
+
+<br />
+
+같은 방법으로, 콤마 뒤에 변수를 넣어서 변수의 내용을 출력할 수도 있습니다.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+int a = 1;
+float b = 3.14;
+double c = 2.71;
+char d = 'a';
+
+    printf("%d\n", a);
+    printf("%f\n", b);
+    printf("%lf\n", c);
+    printf("%c\n", 'd);
+    return 0;
+
+}
+
+```
+
+```text
+
+1
+3.140000
+2.710000
+a
+
+```
+
+</div>
+
+이번에도 똑같이 결과가 나왔나요?
+
+형식 지정자는 문자열의 원하는 위치로 옮겨서 쓸 수 있습니다.
+
+`int a = 5;`가 선언되었다고 할 때, “a에는 5가 저장되어 있습니다”라는 문장을 출력해봅시다.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap:'1rem', width: '100%'}}>
+
+```c
+#include <stdio.h>
+
+int main(void) {
+int a = 5;
+
+    printf("a에는 %d가 저장되어 있습니다", a);
+    return 0;
+
+}
+
+```
+
+```text
+a에는 5가 저장되어 있습니다
+```
+
+</div>
+
+이 프로그램을 실행시켜도 원하는 결과가 잘 나왔나요?
+
+이렇게 문자열의 원하는 위치로 %d, %c 등을 배치해서 출력할 수 있습니다.

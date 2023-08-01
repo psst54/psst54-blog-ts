@@ -21,8 +21,6 @@ const Post = ({
   categories: Category[];
   categoryPosts: Post[];
 }) => {
-  console.log("!!!!");
-
   return (
     <div className={styles.fullScreen}>
       <Head>

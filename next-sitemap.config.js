@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://psst54-blog-ts.pages.dev/",
+  siteUrl: "https://blog.psst54.me/",
   changefreq: "daily",
   generateRobotsTxt: true,
   priority: 1,

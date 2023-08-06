@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blog.psst54.me/
+Host: https://blog.psst54.me
 
 # Sitemaps
 Sitemap: https://blog.psst54.me/sitemap.xml

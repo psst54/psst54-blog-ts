@@ -27,7 +27,7 @@ const Blog = ({
         <title>abs(YES) | post</title>
         <meta
           name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=5"
         />
       </Head>
 

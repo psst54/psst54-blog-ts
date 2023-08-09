@@ -29,8 +29,7 @@ const Blog = ({
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=5"
         />
-        <meta name="robots" content="noindex" />
-        <meta name="Googlebot" content="noindex" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

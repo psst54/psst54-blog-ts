@@ -37,6 +37,9 @@ const Post = ({
           name="description"
           content={description ? description : "psst54의 공부 블로그"}
         />
+        <meta name="robots" content="noindex" />
+        <meta name="Googlebot" content="noindex" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.container}>

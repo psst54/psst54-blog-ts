@@ -31,12 +31,14 @@ const Post = ({
         <title>abs(YES) | {paramsId}</title>
         <meta
           name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+          content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=5"
         />
         <meta
           name="description"
           content={description ? description : "psst54의 공부 블로그"}
         />
+
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.container}>

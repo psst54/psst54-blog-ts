@@ -29,7 +29,7 @@
 }
 .categoryName:hover {
   font-weight: 700;
-  color: #f199a9;
+  color: #0098df;
 }
 .subCategoryName {
   padding: 0.2rem 0 0.2rem 1rem;
@@ -37,7 +37,7 @@
 }
 .subCategoryName:hover {
   font-weight: 700;
-  color: #f199a9;
+  color: #0098df;
 }
 .categoryCnt {
   font-size: 0.8rem;
@@ -69,7 +69,7 @@
   line-height: 1.4rem;
 }
 .styledA {
-  color: #f199a9;
+  color: #0098df;
   text-decoration: underline;
   padding: 0.3rem 0;
   line-height: 1.4rem;
